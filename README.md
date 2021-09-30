@@ -1,23 +1,20 @@
-# hf-frontend-common
+# hunt-kit
+
+Huntflow UI kit
 
 ## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Разработка
 ```
-npm run serve
+npm run dev
 ```
 
-### Compiles and minifies for production
+### Билд
 ```
 npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
 ```
 
 ### Customize configuration
