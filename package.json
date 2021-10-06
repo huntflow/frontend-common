@@ -12,13 +12,19 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "vite": "^2.6.3",
+    "vite-plugin-vue2": "^1.8.2",
     "vue": "^2.6.11"
   },
-  "main": "dist/hunt-kit.common.js",
+  "main": "dist/hunt-kit.cjs.js",
+  "module": "dist/hunt-kit.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/hunt-kit.es.js",
+      "require": "./dist/hunt-kit.cjs.js"
+    }
+  },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
