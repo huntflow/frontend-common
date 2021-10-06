@@ -14,17 +14,7 @@ module.exports = defineConfig({
       fileName: (format) => `hunt-kit.${format}.js`
     },
     rollupOptions: {
-      // make sure to externalize deps that shouldn't be bundled
-      // into your library
-      external: ['vue'],
-      output: {
-        assetFileNames: (asset) => {
-          if (asset.name === 'style.css') {
-            return 'hunt-kit.css';
-          }
-          return asset.name;
-        }
-      }
+      external: ['vue']
     }
   }
 })

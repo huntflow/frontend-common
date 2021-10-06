@@ -11,7 +11,7 @@ var render$1 = function() {
   return _c("button", _vm._g(_vm._b({ class: _vm.$style.button }, "button", _vm.$attrs, false), _vm.$listeners), [_vm._t("default")], 2);
 };
 var staticRenderFns$1 = [];
-const button$1 = "_button_i5qus_12";
+const button$1 = "_button_w7cyr_12";
 var __style0$1 = {
   button: button$1
 };

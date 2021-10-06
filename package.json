@@ -22,7 +22,8 @@
     ".": {
       "import": "./dist/hunt-kit.es.js",
       "require": "./dist/hunt-kit.cjs.js"
-    }
+    },
+    "./hunt-kit.css": "./dist/style.css"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
