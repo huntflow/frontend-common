@@ -4,11 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "dev": "vue-cli-service build --formats=commonjs --target lib --name hunt-kit --watch ./src/lib.js",
-    "build": "vue-cli-service build --formats=commonjs --target lib --name hunt-kit ./src/lib.js",
-    "lint": "vue-cli-service lint",
-    "update": "npm install && npm run build",
-    "update:dev": "npm install && npm run dev"
+    "dev": "vite build --watch",
+    "build": "vite build"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -29,7 +26,6 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "less-loader": "^10.0.1",
     "vue-template-compiler": "^2.6.11",
     "webpack": "^4.46.0"
   },
