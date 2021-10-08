@@ -5,9 +5,13 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "dev": "vite build --watch",
-    "build": "vite build"
+    "build": "vite build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@storybook/addon-essentials": "^6.2.9",
+    "@vue/cli-plugin-babel": "^4.5.13",
     "core-js": "^3.6.5",
     "vite": "^2.6.3",
     "vite-plugin-vue2": "^1.8.2",
@@ -23,9 +27,15 @@
     "./hunt-kit.css": "./dist/style.css"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@storybook/addon-actions": "^6.3.10",
+    "@storybook/addon-links": "^6.3.10",
+    "@storybook/vue": "^6.3.10",
     "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "vue-loader": "^15.9.8",
     "vue-template-compiler": "^2.6.11",
     "webpack": "^4.46.0"
   },
