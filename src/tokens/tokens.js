@@ -1,221 +1,219 @@
 /**
  * Do not edit directly
- * Generated on Thu, 25 Nov 2021 14:41:29 GMT
+ * Generated on Thu, 25 Nov 2021 15:14:56 GMT
  */
 
-module.exports = {
-  "defaut-palette-50": "#fafcfc",
-  "defaut-palette-100": "#e4e8ee",
-  "defaut-palette-200": "#c1c9d0",
-  "defaut-palette-300": "#a2abb7",
-  "defaut-palette-400": "#8892A2",
-  "defaut-palette-500": "#6b7385",
-  "defaut-palette-600": "#505669",
-  "defaut-palette-700": "#3c4055",
-  "defaut-palette-800": "#36384D",
-  "defaut-palette-900": "#2b2e44",
-  "accent-palette-50": "#EFFCFD",
-  "accent-palette-100": "#CFF4FA",
-  "accent-palette-200": "#80E3F2",
-  "accent-palette-300": "#25CDE6",
-  "accent-palette-400": "#20B4CA",
-  "accent-palette-500": "#1DA1B5",
-  "accent-palette-600": "#167D8C",
-  "accent-palette-700": "#136875",
-  "accent-palette-800": "#0F535D",
-  "accent-palette-900": "#0C4149",
-  "font-family": "Graphik LC",
-  "succes-palette-50": "#E7F9F0",
-  "succes-palette-100": "#CFF3E1",
-  "succes-palette-200": "#6EDAA4",
-  "succes-palette-300": "#3DCE86",
-  "succes-palette-400": "#0DC268",
-  "succes-palette-500": "#0A9B53",
-  "succes-palette-600": "#087C42",
-  "succes-palette-700": "#065D32",
-  "succes-palette-800": "#054726",
-  "succes-palette-900": "#04351C",
-  "fontsize-g": "64px",
-  "fontsize-xxl": "56px",
-  "fontsize-xl": "48px",
-  "fontsize-l": "36px",
-  "fontsize-lm": "28px",
-  "fontsize-ms": "20px",
-  "fontsize-s": "16px",
-  "fontsize-xs": "14px",
-  "fontsize-xxs": "12px",
-  "fontsize-m": "24px",
-  "fontweight-semibold": "Semibold",
-  "fontweight-medium": "Medium",
-  "fontweight-regular": "Regular",
-  "line-height-text": "140%",
-  "line-height-interface": "110%",
-  "header-display-font-family": "Graphik LC",
-  "header-display-font-weight": "Medium",
-  "header-display-line-height": "110%",
-  "header-display-font-size": "36px",
-  "header-display-letter-spacing": "0",
-  "header-display-paragraph-spacing": "0",
-  "header-display-text-decoration": "0",
-  "header-display-text-case": "0",
-  "header-h1-font-family": "Graphik LC",
-  "header-h1-font-weight": "Medium",
-  "header-h1-line-height": "110%",
-  "header-h1-font-size": "28px",
-  "header-h1-letter-spacing": "0",
-  "header-h1-paragraph-spacing": "0",
-  "header-h1-text-decoration": "0",
-  "header-h1-text-case": "0",
-  "header-h2-font-family": "Graphik LC",
-  "header-h2-font-weight": "Medium",
-  "header-h2-line-height": "110%",
-  "header-h2-font-size": "24px",
-  "header-h2-letter-spacing": "0",
-  "header-h2-paragraph-spacing": "0",
-  "header-h2-text-decoration": "0",
-  "header-h2-text-case": "0",
-  "header-h3-font-family": "Graphik LC",
-  "header-h3-font-weight": "Medium",
-  "header-h3-line-height": "110%",
-  "header-h3-font-size": "20px",
-  "header-h3-letter-spacing": "0",
-  "header-h3-paragraph-spacing": "0",
-  "header-h3-text-decoration": "0",
-  "header-h3-text-case": "0",
-  "header-h4-font-family": "Graphik LC",
-  "header-h4-font-weight": "Medium",
-  "header-h4-line-height": "110%",
-  "header-h4-font-size": "12px",
-  "header-h4-letter-spacing": "0",
-  "header-h4-paragraph-spacing": "0",
-  "header-h4-text-decoration": "0",
-  "header-h4-text-case": "uppercase",
-  "header-base-text-font-family": "Graphik LC",
-  "header-base-text-font-weight": "Regular",
-  "header-base-text-line-height": "110%",
-  "header-base-text-font-size": "16px",
-  "header-base-text-letter-spacing": "0",
-  "header-base-text-paragraph-spacing": "0",
-  "header-base-text-text-decoration": "0",
-  "header-base-text-text-case": "0",
-  "header-secondary-text-font-family": "Graphik LC",
-  "header-secondary-text-font-weight": "Regular",
-  "header-secondary-text-line-height": "110%",
-  "header-secondary-text-font-size": "14px",
-  "header-secondary-text-letter-spacing": "0",
-  "header-secondary-text-paragraph-spacing": "0",
-  "header-secondary-text-text-decoration": "0",
-  "header-secondary-text-text-case": "0",
-  "input-label-font-family": "Graphik LC",
-  "input-label-font-weight": "Medium",
-  "input-label-line-height": "110%",
-  "input-label-font-size": "16px",
-  "input-label-letter-spacing": "0",
-  "input-label-paragraph-spacing": "0",
-  "input-label-text-decoration": "0",
-  "input-label-text-case": "0",
-  "input-text-font-family": "Graphik LC",
-  "input-text-font-weight": "Regular",
-  "input-text-line-height": "110%",
-  "input-text-font-size": "16px",
-  "input-text-letter-spacing": "0",
-  "input-text-paragraph-spacing": "0",
-  "input-text-text-decoration": "0",
-  "input-text-text-case": "0",
-  "input-error-subscription-font-family": "Graphik LC",
-  "input-error-subscription-font-weight": "Regular",
-  "input-error-subscription-line-height": "110%",
-  "input-error-subscription-font-size": "14px",
-  "input-error-subscription-letter-spacing": "0",
-  "input-error-subscription-paragraph-spacing": "0",
-  "input-error-subscription-text-decoration": "0",
-  "input-error-subscription-text-case": "0",
-  "button-s-text-font-family": "Graphik LC",
-  "button-s-text-font-weight": "Regular",
-  "button-s-text-line-height": "110%",
-  "button-s-text-font-size": "16px",
-  "button-s-text-letter-spacing": "0",
-  "button-s-text-paragraph-spacing": "0",
-  "button-s-text-text-decoration": "0",
-  "button-s-text-text-case": "0",
-  "button-xs-text-font-family": "Graphik LC",
-  "button-xs-text-font-weight": "Regular",
-  "button-xs-text-line-height": "110%",
-  "button-xs-text-font-size": "14px",
-  "button-xs-text-letter-spacing": "0",
-  "button-xs-text-paragraph-spacing": "0",
-  "button-xs-text-text-decoration": "0",
-  "button-xs-text-text-case": "0",
-  "space-xl": "64px",
-  "space-l": "48px",
-  "space-m": "32px",
-  "space-sm": "24px",
-  "space-s": "16px",
-  "space-xs": "8px",
-  "space-xxs": "4px",
-  "space-no": "0px",
-  "input-height-s": "36px",
-  "input-height-m": "42px",
-  "input-height-xs": "28px",
-  "xxxs": "2px",
-  "error-palette-50": "#F9E6EA",
-  "error-palette-100": "#F3CED5",
-  "error-palette-200": "#E69DAB",
-  "error-palette-300": "#DA6C80",
-  "error-palette-400": "#CE3B57",
-  "error-palette-500": "#C10A2C",
-  "error-palette-600": "#9A0823",
-  "error-palette-700": "#74061A",
-  "error-palette-800": "#4D0412",
-  "error-palette-900": "#270209",
-  "base-palette-white": "#ffffff",
-  "uppercase": "uppercase",
-  "radius-no": "0px",
-  "radius-xs": "4px",
-  "radius-s": "8px",
-  "radius-m": "16px",
-  "radius-round": "100px",
-  "shadow-modal": "0px 10px 50px 0px #DFE0E3",
-  "shadow-dropdown": "0px 0px 15px 0px #DFE0E3",
-  "accent-color-text": "#1DA1B5",
-  "accent-color-text-secondary": "#20B4CA",
-  "accent-color-bg": "#CFF4FA",
-  "accent-color-cta": "#1DA1B5",
-  "accent-color-cta-hover": "#136875",
-  "accent-color-cta-disabled": "#CFF4FA",
-  "accent-color-icon": "#1DA1B5",
-  "accent-color-icon-secondary": "#20B4CA",
-  "accent-border-active": "#1DA1B5",
-  "accent-border-focus": "#1DA1B5",
-  "accent-border-hover": "#167D8C",
-  "default-color-text": "#3c4055",
-  "default-color-text-secondary": "#a2abb7",
-  "default-color-bg": "#ffffff",
-  "default-color-bg-secondary": "#fafcfc",
-  "default-color-cta": "#3c4055",
-  "default-color-cta-hover": "#2b2e44",
-  "default-color-cta-disabled": "#8892A2",
-  "default-color-icon": "#3c4055",
-  "default-color-icon-secondary": "#c1c9d0",
-  "default-color-divider": "#e4e8ee",
-  "default-color-border": "#e4e8ee",
-  "default-color-border-hover": "#c1c9d0",
-  "default-color-text-disabled": "#e4e8ee",
-  "default-color-secondary": "#c1c9d0",
-  "default-color-secondary-hover": "#8892A2",
-  "default-color-secondary-disabled": "#e4e8ee",
-  "error-color-text": "#C10A2C",
-  "error-color-bg": "#F3CED5",
-  "error-color-cta": "#C10A2C",
-  "error-color-cta-hover": "#9A0823",
-  "error-color-cta-disabled": "#F3CED5",
-  "error-color-icon": "#C10A2C",
-  "error-border-active": "#C10A2C",
-  "success-color-text": "#0A9B53",
-  "success-color-bg": "#CFF3E1",
-  "success-color-cta": "#0A9B53",
-  "success-color-cta-hover": "#087C42",
-  "success-color-cta-disabled": "#CFF3E1",
-  "success-color-icon": "#0A9B53",
-  "success-border-active": "#0A9B53"
-};
+export const defautPalette50 = "#fafcfc";
+export const defautPalette100 = "#e4e8ee";
+export const defautPalette200 = "#c1c9d0";
+export const defautPalette300 = "#a2abb7";
+export const defautPalette400 = "#8892A2";
+export const defautPalette500 = "#6b7385";
+export const defautPalette600 = "#505669";
+export const defautPalette700 = "#3c4055";
+export const defautPalette800 = "#36384D";
+export const defautPalette900 = "#2b2e44";
+export const accentPalette50 = "#EFFCFD";
+export const accentPalette100 = "#CFF4FA";
+export const accentPalette200 = "#80E3F2";
+export const accentPalette300 = "#25CDE6";
+export const accentPalette400 = "#20B4CA";
+export const accentPalette500 = "#1DA1B5";
+export const accentPalette600 = "#167D8C";
+export const accentPalette700 = "#136875";
+export const accentPalette800 = "#0F535D";
+export const accentPalette900 = "#0C4149";
+export const fontFamily = "Graphik LC";
+export const succesPalette50 = "#E7F9F0";
+export const succesPalette100 = "#CFF3E1";
+export const succesPalette200 = "#6EDAA4";
+export const succesPalette300 = "#3DCE86";
+export const succesPalette400 = "#0DC268";
+export const succesPalette500 = "#0A9B53";
+export const succesPalette600 = "#087C42";
+export const succesPalette700 = "#065D32";
+export const succesPalette800 = "#054726";
+export const succesPalette900 = "#04351C";
+export const fontsizeG = "64px";
+export const fontsizeXxl = "56px";
+export const fontsizeXl = "48px";
+export const fontsizeL = "36px";
+export const fontsizeLm = "28px";
+export const fontsizeMs = "20px";
+export const fontsizeS = "16px";
+export const fontsizeXs = "14px";
+export const fontsizeXxs = "12px";
+export const fontsizeM = "24px";
+export const fontweightSemibold = "Semibold";
+export const fontweightMedium = "Medium";
+export const fontweightRegular = "Regular";
+export const lineHeightText = "140%";
+export const lineHeightInterface = "110%";
+export const headerDisplayFontFamily = "Graphik LC";
+export const headerDisplayFontWeight = "Medium";
+export const headerDisplayLineHeight = "110%";
+export const headerDisplayFontSize = "36px";
+export const headerDisplayLetterSpacing = "0";
+export const headerDisplayParagraphSpacing = "0";
+export const headerDisplayTextDecoration = "0";
+export const headerDisplayTextCase = "0";
+export const headerH1FontFamily = "Graphik LC";
+export const headerH1FontWeight = "Medium";
+export const headerH1LineHeight = "110%";
+export const headerH1FontSize = "28px";
+export const headerH1LetterSpacing = "0";
+export const headerH1ParagraphSpacing = "0";
+export const headerH1TextDecoration = "0";
+export const headerH1TextCase = "0";
+export const headerH2FontFamily = "Graphik LC";
+export const headerH2FontWeight = "Medium";
+export const headerH2LineHeight = "110%";
+export const headerH2FontSize = "24px";
+export const headerH2LetterSpacing = "0";
+export const headerH2ParagraphSpacing = "0";
+export const headerH2TextDecoration = "0";
+export const headerH2TextCase = "0";
+export const headerH3FontFamily = "Graphik LC";
+export const headerH3FontWeight = "Medium";
+export const headerH3LineHeight = "110%";
+export const headerH3FontSize = "20px";
+export const headerH3LetterSpacing = "0";
+export const headerH3ParagraphSpacing = "0";
+export const headerH3TextDecoration = "0";
+export const headerH3TextCase = "0";
+export const headerH4FontFamily = "Graphik LC";
+export const headerH4FontWeight = "Medium";
+export const headerH4LineHeight = "110%";
+export const headerH4FontSize = "12px";
+export const headerH4LetterSpacing = "0";
+export const headerH4ParagraphSpacing = "0";
+export const headerH4TextDecoration = "0";
+export const headerH4TextCase = "uppercase";
+export const headerBaseTextFontFamily = "Graphik LC";
+export const headerBaseTextFontWeight = "Regular";
+export const headerBaseTextLineHeight = "110%";
+export const headerBaseTextFontSize = "16px";
+export const headerBaseTextLetterSpacing = "0";
+export const headerBaseTextParagraphSpacing = "0";
+export const headerBaseTextTextDecoration = "0";
+export const headerBaseTextTextCase = "0";
+export const headerSecondaryTextFontFamily = "Graphik LC";
+export const headerSecondaryTextFontWeight = "Regular";
+export const headerSecondaryTextLineHeight = "110%";
+export const headerSecondaryTextFontSize = "14px";
+export const headerSecondaryTextLetterSpacing = "0";
+export const headerSecondaryTextParagraphSpacing = "0";
+export const headerSecondaryTextTextDecoration = "0";
+export const headerSecondaryTextTextCase = "0";
+export const inputLabelFontFamily = "Graphik LC";
+export const inputLabelFontWeight = "Medium";
+export const inputLabelLineHeight = "110%";
+export const inputLabelFontSize = "16px";
+export const inputLabelLetterSpacing = "0";
+export const inputLabelParagraphSpacing = "0";
+export const inputLabelTextDecoration = "0";
+export const inputLabelTextCase = "0";
+export const inputTextFontFamily = "Graphik LC";
+export const inputTextFontWeight = "Regular";
+export const inputTextLineHeight = "110%";
+export const inputTextFontSize = "16px";
+export const inputTextLetterSpacing = "0";
+export const inputTextParagraphSpacing = "0";
+export const inputTextTextDecoration = "0";
+export const inputTextTextCase = "0";
+export const inputErrorSubscriptionFontFamily = "Graphik LC";
+export const inputErrorSubscriptionFontWeight = "Regular";
+export const inputErrorSubscriptionLineHeight = "110%";
+export const inputErrorSubscriptionFontSize = "14px";
+export const inputErrorSubscriptionLetterSpacing = "0";
+export const inputErrorSubscriptionParagraphSpacing = "0";
+export const inputErrorSubscriptionTextDecoration = "0";
+export const inputErrorSubscriptionTextCase = "0";
+export const buttonSTextFontFamily = "Graphik LC";
+export const buttonSTextFontWeight = "Regular";
+export const buttonSTextLineHeight = "110%";
+export const buttonSTextFontSize = "16px";
+export const buttonSTextLetterSpacing = "0";
+export const buttonSTextParagraphSpacing = "0";
+export const buttonSTextTextDecoration = "0";
+export const buttonSTextTextCase = "0";
+export const buttonXsTextFontFamily = "Graphik LC";
+export const buttonXsTextFontWeight = "Regular";
+export const buttonXsTextLineHeight = "110%";
+export const buttonXsTextFontSize = "14px";
+export const buttonXsTextLetterSpacing = "0";
+export const buttonXsTextParagraphSpacing = "0";
+export const buttonXsTextTextDecoration = "0";
+export const buttonXsTextTextCase = "0";
+export const spaceXl = "64px";
+export const spaceL = "48px";
+export const spaceM = "32px";
+export const spaceSm = "24px";
+export const spaceS = "16px";
+export const spaceXs = "8px";
+export const spaceXxs = "4px";
+export const spaceNo = "0px";
+export const inputHeightS = "36px";
+export const inputHeightM = "42px";
+export const inputHeightXs = "28px";
+export const xxxs = "2px";
+export const errorPalette50 = "#F9E6EA";
+export const errorPalette100 = "#F3CED5";
+export const errorPalette200 = "#E69DAB";
+export const errorPalette300 = "#DA6C80";
+export const errorPalette400 = "#CE3B57";
+export const errorPalette500 = "#C10A2C";
+export const errorPalette600 = "#9A0823";
+export const errorPalette700 = "#74061A";
+export const errorPalette800 = "#4D0412";
+export const errorPalette900 = "#270209";
+export const basePaletteWhite = "#ffffff";
+export const uppercase = "uppercase";
+export const radiusNo = "0px";
+export const radiusXs = "4px";
+export const radiusS = "8px";
+export const radiusM = "16px";
+export const radiusRound = "100px";
+export const shadowModal = "0px 10px 50px 0px #DFE0E3";
+export const shadowDropdown = "0px 0px 15px 0px #DFE0E3";
+export const accentColorText = "#1DA1B5";
+export const accentColorTextSecondary = "#20B4CA";
+export const accentColorBg = "#CFF4FA";
+export const accentColorCta = "#1DA1B5";
+export const accentColorCtaHover = "#136875";
+export const accentColorCtaDisabled = "#CFF4FA";
+export const accentColorIcon = "#1DA1B5";
+export const accentColorIconSecondary = "#20B4CA";
+export const accentBorderActive = "#1DA1B5";
+export const accentBorderFocus = "#1DA1B5";
+export const accentBorderHover = "#167D8C";
+export const defaultColorText = "#3c4055";
+export const defaultColorTextSecondary = "#a2abb7";
+export const defaultColorBg = "#ffffff";
+export const defaultColorBgSecondary = "#fafcfc";
+export const defaultColorCta = "#3c4055";
+export const defaultColorCtaHover = "#2b2e44";
+export const defaultColorCtaDisabled = "#8892A2";
+export const defaultColorIcon = "#3c4055";
+export const defaultColorIconSecondary = "#c1c9d0";
+export const defaultColorDivider = "#e4e8ee";
+export const defaultColorBorder = "#e4e8ee";
+export const defaultColorBorderHover = "#c1c9d0";
+export const defaultColorTextDisabled = "#e4e8ee";
+export const defaultColorSecondary = "#c1c9d0";
+export const defaultColorSecondaryHover = "#8892A2";
+export const defaultColorSecondaryDisabled = "#e4e8ee";
+export const errorColorText = "#C10A2C";
+export const errorColorBg = "#F3CED5";
+export const errorColorCta = "#C10A2C";
+export const errorColorCtaHover = "#9A0823";
+export const errorColorCtaDisabled = "#F3CED5";
+export const errorColorIcon = "#C10A2C";
+export const errorBorderActive = "#C10A2C";
+export const successColorText = "#0A9B53";
+export const successColorBg = "#CFF3E1";
+export const successColorCta = "#0A9B53";
+export const successColorCtaHover = "#087C42";
+export const successColorCtaDisabled = "#CFF3E1";
+export const successColorIcon = "#0A9B53";
+export const successBorderActive = "#0A9B53";

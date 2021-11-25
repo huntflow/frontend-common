@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "dev": "vite build --watch",
-    "build": "vite build",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "prepare-tokens": "style-dictionary build",
+    "dev": "npm run prepare-tokens && vite build --watch",
+    "build": "npm run prepare-tokens && vite build",
+    "storybook": "npm run prepare-tokens && start-storybook -p 6006",
+    "build-storybook": "npm run prepare-tokens && build-storybook"
   },
   "dependencies": {
     "@storybook/addon-essentials": "^6.2.9",

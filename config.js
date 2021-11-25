@@ -43,19 +43,27 @@ StyleDictionary.registerTransform({
     ].join(' '),
 });
 
+StyleDictionary.registerFormat({
+  name: 'es6-module',
+  formatter: (arg) => {
+    console.log(arg)
+    return '';
+  },
+});
+
 module.exports = {
   source: ['tokens/**/*.json'],
   platforms: {
     css: {
       transforms: [
         'attribute/cti',
-        'name/cti/kebab',
+        'name/cti/camel',
         'time/seconds',
         'content/icon',
         'size/rem',
         'color/css',
         'hf/px',
-        'hf/shadow'
+        'hf/shadow',
       ],
       buildPath: 'src/tokens/',
       files: [
@@ -68,12 +76,12 @@ module.exports = {
         },
         {
           destination: 'tokens.js',
-          format: 'javascript/module-flat',
+          format: 'javascript/es6',
           options: {
             outputReferences: true,
           },
         },
       ],
-    }
+    },
   },
 };
