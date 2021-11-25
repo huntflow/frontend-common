@@ -1,0 +1,68 @@
+{
+  "default": {
+    "color-text": {
+      "value": "$defaut-palette.700",
+      "type": "color"
+    },
+    "color-text-secondary": {
+      "value": "$defaut-palette.300",
+      "type": "color"
+    },
+    "color-bg": {
+      "value": "$base-palette.white",
+      "type": "color"
+    },
+    "color-bg-secondary": {
+      "value": "$defaut-palette.50",
+      "type": "color"
+    },
+    "color-cta": {
+      "value": "$defaut-palette.700",
+      "type": "color"
+    },
+    "color-cta-hover": {
+      "value": "$defaut-palette.900",
+      "type": "color"
+    },
+    "color-cta_disabled": {
+      "value": "$defaut-palette.400",
+      "type": "color"
+    },
+    "color-icon": {
+      "value": "$defaut-palette.700",
+      "type": "color"
+    },
+    "color-icon-secondary": {
+      "value": "$defaut-palette.200",
+      "type": "color"
+    },
+    "color-divider": {
+      "value": "$defaut-palette.100",
+      "type": "color"
+    },
+    "color-border": {
+      "value": "$defaut-palette.100",
+      "type": "color"
+    },
+    "color-border-hover": {
+      "value": "$defaut-palette.200",
+      "type": "color"
+    },
+    "color-text-disabled": {
+      "value": "$defaut-palette.100",
+      "type": "color"
+    },
+    "color-secondary": {
+      "value": "$defaut-palette.200",
+      "type": "color"
+    },
+    "color-secondary-hover": {
+      "value": "$defaut-palette.400",
+      "type": "color"
+    },
+    "color-secondary-disabled": {
+      "value": "$defaut-palette.100",
+      "type": "color"
+    }
+  }
+}

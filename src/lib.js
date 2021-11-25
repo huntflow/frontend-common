@@ -1,4 +1,4 @@
-import * as allTokens from './tokens';
+import allTokens from './tokens/tokens';
 
 export const tokens = allTokens;
 
