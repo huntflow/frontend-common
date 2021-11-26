@@ -43,14 +43,6 @@ StyleDictionary.registerTransform({
     ].join(' '),
 });
 
-StyleDictionary.registerFormat({
-  name: 'es6-module',
-  formatter: (arg) => {
-    console.log(arg)
-    return '';
-  },
-});
-
 module.exports = {
   source: ['tokens/**/*.json'],
   platforms: {

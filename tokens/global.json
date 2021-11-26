@@ -88,7 +88,7 @@
     "value": "Graphik LC",
     "type": "fontFamilies"
   },
-  "succes-palette": {
+  "success-palette": {
     "50": {
       "value": "#E7F9F0",
       "type": "color"
@@ -130,7 +130,7 @@
       "type": "color"
     }
   },
-  "fontsize": {
+  "font-size": {
     "g": {
       "value": "64",
       "type": "fontSizes"
@@ -172,7 +172,7 @@
       "type": "fontSizes"
     }
   },
-  "fontweight": {
+  "font-weight": {
     "semibold": {
       "value": "Semibold",
       "type": "fontWeights"
@@ -186,7 +186,7 @@
       "type": "fontWeights"
     }
   },
-  "lineHeight": {
+  "line-height": {
     "text": {
       "value": "140%",
       "type": "lineHeights"
@@ -202,13 +202,13 @@
         "value": "$font-family"
       },
       "fontWeight": {
-        "value": "$fontweight.medium"
+        "value": "{font-weight.medium}"
       },
       "lineHeight": {
-        "value": "$lineHeight.interface"
+        "value": "$line-height.interface"
       },
       "fontSize": {
-        "value": "$fontsize.l"
+        "value": "{font-size.l}"
       },
       "letterSpacing": {
         "value": "0"
@@ -228,13 +228,13 @@
         "value": "$font-family"
       },
       "fontWeight": {
-        "value": "$fontweight.medium"
+        "value": "{font-weight.medium}"
       },
       "lineHeight": {
-        "value": "$lineHeight.interface"
+        "value": "$line-height.interface"
       },
       "fontSize": {
-        "value": "$fontsize.lm"
+        "value": "{font-size.lm}"
       },
       "letterSpacing": {
         "value": "0"
@@ -254,13 +254,13 @@
         "value": "$font-family"
       },
       "fontWeight": {
-        "value": "$fontweight.medium"
+        "value": "{font-weight.medium}"
       },
       "lineHeight": {
-        "value": "$lineHeight.interface"
+        "value": "$line-height.interface"
       },
       "fontSize": {
-        "value": "$fontsize.m"
+        "value": "{font-size.m}"
       },
       "letterSpacing": {
         "value": "0"
@@ -280,13 +280,13 @@
         "value": "$font-family"
       },
       "fontWeight": {
-        "value": "$fontweight.medium"
+        "value": "{font-weight.medium}"
       },
       "lineHeight": {
-        "value": "$lineHeight.interface"
+        "value": "$line-height.interface"
       },
       "fontSize": {
-        "value": "$fontsize.ms"
+        "value": "{font-size.ms}"
       },
       "letterSpacing": {
         "value": "0"
@@ -306,13 +306,13 @@
         "value": "$font-family"
       },
       "fontWeight": {
-        "value": "$fontweight.medium"
+        "value": "{font-weight.medium}"
       },
       "lineHeight": {
-        "value": "$lineHeight.interface"
+        "value": "$line-height.interface"
       },
       "fontSize": {
-        "value": "$fontsize.xxs"
+        "value": "{font-size.xxs}"
       },
       "letterSpacing": {
         "value": "0"
@@ -324,7 +324,7 @@
         "value": "0"
       },
       "textCase": {
-        "value": "$uppercase"
+        "value": "{text-case.uppercase}"
       }
     },
     "base-text": {
@@ -332,13 +332,13 @@
         "value": "$font-family"
       },
       "fontWeight": {
-        "value": "$fontweight.regular"
+        "value": "{font-weight.regular}"
       },
       "lineHeight": {
-        "value": "$lineHeight.interface"
+        "value": "$line-height.interface"
       },
       "fontSize": {
-        "value": "$fontsize.s"
+        "value": "{font-size.s}"
       },
       "letterSpacing": {
         "value": "0"
@@ -358,13 +358,13 @@
         "value": "$font-family"
       },
       "fontWeight": {
-        "value": "$fontweight.regular"
+        "value": "{font-weight.regular}"
       },
       "lineHeight": {
-        "value": "$lineHeight.interface"
+        "value": "$line-height.interface"
       },
       "fontSize": {
-        "value": "$fontsize.xs"
+        "value": "{font-size.xs}"
       },
       "letterSpacing": {
         "value": "0"
@@ -386,13 +386,13 @@
         "value": "$font-family"
       },
       "fontWeight": {
-        "value": "$fontweight.medium"
+        "value": "{font-weight.medium}"
       },
       "lineHeight": {
-        "value": "$lineHeight.interface"
+        "value": "$line-height.interface"
       },
       "fontSize": {
-        "value": "$fontsize.s"
+        "value": "{font-size.s}"
       },
       "letterSpacing": {
         "value": "0"
@@ -412,13 +412,13 @@
         "value": "$font-family"
       },
       "fontWeight": {
-        "value": "$fontweight.regular"
+        "value": "{font-weight.regular}"
       },
       "lineHeight": {
-        "value": "$lineHeight.interface"
+        "value": "$line-height.interface"
       },
       "fontSize": {
-        "value": "$fontsize.s"
+        "value": "{font-size.s}"
       },
       "letterSpacing": {
         "value": "0"
@@ -438,13 +438,13 @@
         "value": "$font-family"
       },
       "fontWeight": {
-        "value": "$fontweight.regular"
+        "value": "{font-weight.regular}"
       },
       "lineHeight": {
-        "value": "$lineHeight.interface"
+        "value": "$line-height.interface"
       },
       "fontSize": {
-        "value": "$fontsize.xs"
+        "value": "{font-size.xs}"
       },
       "letterSpacing": {
         "value": "0"
@@ -466,13 +466,13 @@
         "value": "$font-family"
       },
       "fontWeight": {
-        "value": "$fontweight.regular"
+        "value": "{font-weight.regular}"
       },
       "lineHeight": {
-        "value": "$lineHeight.interface"
+        "value": "$line-height.interface"
       },
       "fontSize": {
-        "value": "$fontsize.s"
+        "value": "{font-size.s}"
       },
       "letterSpacing": {
         "value": "0"
@@ -492,13 +492,13 @@
         "value": "$font-family"
       },
       "fontWeight": {
-        "value": "$fontweight.regular"
+        "value": "{font-weight.regular}"
       },
       "lineHeight": {
-        "value": "$lineHeight.interface"
+        "value": "$line-height.interface"
       },
       "fontSize": {
-        "value": "$fontsize.xs"
+        "value": "{font-size.xs}"
       },
       "letterSpacing": {
         "value": "0"
@@ -614,9 +614,11 @@
       "type": "color"
     }
   },
-  "uppercase": {
-    "value": "uppercase",
-    "type": "textCase"
+  "text-case": {
+    "uppercase": {
+      "value": "uppercase",
+      "type": "textCase"
+    }
   },
   "radius": {
     "no": {

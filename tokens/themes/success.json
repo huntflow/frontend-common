@@ -1,31 +1,31 @@
 {
   "success": {
     "color-text": {
-      "value": "$succes-palette.500",
+      "value": "{success-palette.500}",
       "type": "color"
     },
     "color-bg": {
-      "value": "$succes-palette.100",
+      "value": "{success-palette.100}",
       "type": "color"
     },
     "color-cta": {
-      "value": "$succes-palette.500",
+      "value": "{success-palette.500}",
       "type": "color"
     },
     "color-cta-hover": {
-      "value": "$succes-palette.600",
+      "value": "{success-palette.600}",
       "type": "color"
     },
     "color-cta_disabled": {
-      "value": "$succes-palette.100",
+      "value": "{success-palette.100}",
       "type": "color"
     },
     "color-icon": {
-      "value": "$succes-palette.500",
+      "value": "{success-palette.500}",
       "type": "color"
     },
     "border-active": {
-      "value": "$succes-palette.500",
+      "value": "{success-palette.500}",
       "type": "color"
     }
   }
