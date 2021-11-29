@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 29 Nov 2021 10:11:01 GMT
+ * Generated on Mon, 29 Nov 2021 12:52:53 GMT
  */
 
 export const defautPalette0 = "#FFF";
@@ -177,6 +177,7 @@ export const radiusM = "16px";
 export const radiusRound = "100px";
 export const shadowModal = "0px 10px 50px 0px #DFE0E3";
 export const shadowDropdown = "0px 0px 15px 0px #DFE0E3";
+export const accentTextBtn = "#FFF";
 export const accentBgBtn = "#1DA1B5";
 export const accentBgBtnDisabled = "#CFF4FA";
 export const accentBg = "#1DA1B5";
@@ -184,6 +185,7 @@ export const accentBgBtnHover = "#136875";
 export const accentBgWeak = "#CFF4FA";
 export const accentText = "#1DA1B5";
 export const accentTextHover = "#167D8C";
+export const accentTextBtnHover = "#FFF";
 export const accentTextDisabled = "#25CDE6";
 export const accentIcon = "#1DA1B5";
 export const accentBorderBtn = "#1DA1B5";
@@ -199,6 +201,8 @@ export const defaultTextDisabled = "#e4e8ee";
 export const defaultTextBtn = "#FFF";
 export const defaultBorderBtn = "#e4e8ee";
 export const defaultBorderBtnHover = "#8892A2";
+export const defaultBorderBtnWeak = "#e4e8ee";
+export const defaultBorderBtnWeakHover = "#8892A2";
 export const defaultDefaultDivider = "#c1c9d0";
 export const defaultBg = "#ffffff";
 export const defaultIcon = "#2b2e44";

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 29 Nov 2021 10:11:01 GMT
+ * Generated on Mon, 29 Nov 2021 12:52:53 GMT
  */
 
 :root {
@@ -146,6 +146,8 @@
   --defaultIcon: var(--defautPalette900);
   --defaultBg: var(--basePaletteWhite);
   --defaultDefaultDivider: var(--defautPalette200);
+  --defaultBorderBtnWeakHover: var(--defautPalette400);
+  --defaultBorderBtnWeak: var(--defautPalette100);
   --defaultBorderBtnHover: var(--defautPalette400);
   --defaultBorderBtn: var(--defautPalette100);
   --defaultTextBtn: var(--defautPalette0);
@@ -161,6 +163,7 @@
   --accentBorderBtn: var(--accentPalette500);
   --accentIcon: var(--accentPalette500);
   --accentTextDisabled: var(--accentPalette300);
+  --accentTextBtnHover: var(--defautPalette0);
   --accentTextHover: var(--accentPalette600);
   --accentText: var(--accentPalette500);
   --accentBgWeak: var(--accentPalette100);
@@ -168,6 +171,7 @@
   --accentBg: var(--accentPalette500);
   --accentBgBtnDisabled: var(--accentPalette100);
   --accentBgBtn: var(--accentPalette500);
+  --accentTextBtn: var(--defautPalette0);
   --buttonXsTextFontSize: [object Object];
   --buttonXsTextLineHeight: var(--lineHeightInterface);
   --buttonXsTextFontWeight: [object Object];

@@ -44,6 +44,14 @@
       "value": "$defaut-palette.400",
       "type": "color"
     },
+    "border-btn-weak": {
+      "value": "$defaut-palette.100",
+      "type": "color"
+    },
+    "border-btn-weak-hover": {
+      "value": "$defaut-palette.400",
+      "type": "color"
+    },
     "default-divider": {
       "value": "$defaut-palette.200",
       "type": "color"

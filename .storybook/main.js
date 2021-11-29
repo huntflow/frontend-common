@@ -21,6 +21,7 @@ module.exports = {
               ...use[cssLoaderIndex].options,
               modules: {
                 mode: 'local',
+                localIdentName: '[local]--[hash:base64:5]'
               },
             },
           },
