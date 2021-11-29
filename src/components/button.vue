@@ -26,8 +26,7 @@ export default {
       validator(value) {
         return AVAILABLE_PROMINENCE.includes(value)
       }
-    },
-    border: Boolean
+    }
   },
   computed: {
     classNames() {
