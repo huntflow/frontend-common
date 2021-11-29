@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 26 Nov 2021 10:12:20 GMT
+ * Generated on Mon, 29 Nov 2021 10:11:01 GMT
  */
 
 :root {
@@ -128,13 +128,14 @@
   --defautPalette200: #c1c9d0;
   --defautPalette100: #e4e8ee;
   --defautPalette50: #fafcfc;
-  --successBorderActive: [object Object];
-  --successColorIcon: [object Object];
-  --successColorCtaDisabled: [object Object];
-  --successColorCtaHover: [object Object];
-  --successColorCta: [object Object];
-  --successColorBg: [object Object];
-  --successColorText: [object Object];
+  --defautPalette0: #FFF;
+  --successBorderActive: var(--successPalette500);
+  --successColorIcon: var(--successPalette500);
+  --successColorCtaDisabled: var(--successPalette100);
+  --successColorCtaHover: var(--successPalette600);
+  --successColorCta: var(--successPalette500);
+  --successColorBg: var(--successPalette100);
+  --successColorText: var(--successPalette500);
   --errorBorderActive: var(--errorPalette500);
   --errorColorIcon: var(--errorPalette500);
   --errorColorCtaDisabled: var(--errorPalette100);
@@ -142,33 +143,31 @@
   --errorColorCta: var(--errorPalette500);
   --errorColorBg: var(--errorPalette100);
   --errorColorText: var(--errorPalette500);
-  --defaultColorSecondaryDisabled: var(--defautPalette100);
-  --defaultColorSecondaryHover: var(--defautPalette400);
-  --defaultColorSecondary: var(--defautPalette200);
-  --defaultColorTextDisabled: var(--defautPalette100);
-  --defaultColorBorderHover: var(--defautPalette200);
-  --defaultColorBorder: var(--defautPalette100);
-  --defaultColorDivider: var(--defautPalette100);
-  --defaultColorIconSecondary: var(--defautPalette200);
-  --defaultColorIcon: var(--defautPalette700);
-  --defaultColorCtaDisabled: var(--defautPalette400);
-  --defaultColorCtaHover: var(--defautPalette900);
-  --defaultColorCta: var(--defautPalette700);
-  --defaultColorBgSecondary: var(--defautPalette50);
-  --defaultColorBg: var(--basePaletteWhite);
-  --defaultColorTextSecondary: var(--defautPalette300);
-  --defaultColorText: var(--defautPalette700);
-  --accentBorderHover: var(--accentPalette600);
-  --accentBorderFocus: var(--accentPalette500);
-  --accentBorderActive: var(--accentPalette500);
-  --accentColorIconSecondary: var(--accentPalette400);
-  --accentColorIcon: var(--accentPalette500);
-  --accentColorCtaDisabled: var(--accentPalette100);
-  --accentColorCtaHover: var(--accentPalette700);
-  --accentColorCta: var(--accentPalette500);
-  --accentColorBg: var(--accentPalette100);
-  --accentColorTextSecondary: var(--accentPalette400);
-  --accentColorText: var(--accentPalette500);
+  --defaultIcon: var(--defautPalette900);
+  --defaultBg: var(--basePaletteWhite);
+  --defaultDefaultDivider: var(--defautPalette200);
+  --defaultBorderBtnHover: var(--defautPalette400);
+  --defaultBorderBtn: var(--defautPalette100);
+  --defaultTextBtn: var(--defautPalette0);
+  --defaultTextDisabled: var(--defautPalette100);
+  --defaultTextWeak: var(--defautPalette300);
+  --defaultTextWeakHover: var(--defautPalette400);
+  --defaultTextBtnWeak: var(--defautPalette900);
+  --defaultBgStrong: var(--defautPalette50);
+  --defaultBgBtnWeak: var(--basePaletteWhite);
+  --defaultBgBtn: var(--defautPalette300);
+  --defaultText: var(--defautPalette700);
+  --accentBorderHover: var(--accentPalette700);
+  --accentBorderBtn: var(--accentPalette500);
+  --accentIcon: var(--accentPalette500);
+  --accentTextDisabled: var(--accentPalette300);
+  --accentTextHover: var(--accentPalette600);
+  --accentText: var(--accentPalette500);
+  --accentBgWeak: var(--accentPalette100);
+  --accentBgBtnHover: var(--accentPalette700);
+  --accentBg: var(--accentPalette500);
+  --accentBgBtnDisabled: var(--accentPalette100);
+  --accentBgBtn: var(--accentPalette500);
   --buttonXsTextFontSize: [object Object];
   --buttonXsTextLineHeight: var(--lineHeightInterface);
   --buttonXsTextFontWeight: [object Object];

@@ -1,67 +1,59 @@
 {
   "default": {
-    "color-text": {
+    "text": {
       "value": "$defaut-palette.700",
       "type": "color"
     },
-    "color-text-secondary": {
+    "bg-btn": {
       "value": "$defaut-palette.300",
       "type": "color"
     },
-    "color-bg": {
+    "bg-btn-weak": {
       "value": "$base-palette.white",
       "type": "color"
     },
-    "color-bg-secondary": {
+    "bg-strong": {
       "value": "$defaut-palette.50",
       "type": "color"
     },
-    "color-cta": {
-      "value": "$defaut-palette.700",
-      "type": "color"
-    },
-    "color-cta-hover": {
+    "text-btn-weak": {
       "value": "$defaut-palette.900",
       "type": "color"
     },
-    "color-cta_disabled": {
+    "text-weak-hover": {
       "value": "$defaut-palette.400",
       "type": "color"
     },
-    "color-icon": {
-      "value": "$defaut-palette.700",
+    "text-weak": {
+      "value": "$defaut-palette.300",
       "type": "color"
     },
-    "color-icon-secondary": {
-      "value": "$defaut-palette.200",
-      "type": "color"
-    },
-    "color-divider": {
+    "text-disabled": {
       "value": "$defaut-palette.100",
       "type": "color"
     },
-    "color-border": {
+    "text-btn": {
+      "value": "$defaut-palette.0",
+      "type": "color"
+    },
+    "border-btn": {
       "value": "$defaut-palette.100",
       "type": "color"
     },
-    "color-border-hover": {
-      "value": "$defaut-palette.200",
-      "type": "color"
-    },
-    "color-text-disabled": {
-      "value": "$defaut-palette.100",
-      "type": "color"
-    },
-    "color-secondary": {
-      "value": "$defaut-palette.200",
-      "type": "color"
-    },
-    "color-secondary-hover": {
+    "border-btn-hover": {
       "value": "$defaut-palette.400",
       "type": "color"
     },
-    "color-secondary-disabled": {
-      "value": "$defaut-palette.100",
+    "default-divider": {
+      "value": "$defaut-palette.200",
+      "type": "color"
+    },
+    "bg": {
+      "value": "$base-palette.white",
+      "type": "color"
+    },
+    "icon": {
+      "value": "$defaut-palette.900",
       "type": "color"
     }
   }

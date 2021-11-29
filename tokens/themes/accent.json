@@ -1,47 +1,47 @@
 {
   "accent": {
-    "color-text": {
+    "bg-btn": {
       "value": "$accent-palette.500",
       "type": "color"
     },
-    "color-text-secondary": {
-      "value": "$accent-palette.400",
-      "type": "color"
-    },
-    "color-bg": {
+    "bg-btn-disabled": {
       "value": "$accent-palette.100",
       "type": "color"
     },
-    "color-cta": {
+    "bg": {
       "value": "$accent-palette.500",
       "type": "color"
     },
-    "color-cta-hover": {
+    "bg-btn-hover": {
       "value": "$accent-palette.700",
       "type": "color"
     },
-    "color-cta_disabled": {
+    "bg-weak": {
       "value": "$accent-palette.100",
       "type": "color"
     },
-    "color-icon": {
+    "text": {
       "value": "$accent-palette.500",
       "type": "color"
     },
-    "color-icon-secondary": {
-      "value": "$accent-palette.400",
+    "text-hover": {
+      "value": "$accent-palette.600",
       "type": "color"
     },
-    "border-active": {
+    "text-disabled": {
+      "value": "$accent-palette.300",
+      "type": "color"
+    },
+    "icon": {
       "value": "$accent-palette.500",
       "type": "color"
     },
-    "border-focus": {
+    "border-btn": {
       "value": "$accent-palette.500",
       "type": "color"
     },
     "border-hover": {
-      "value": "$accent-palette.600",
+      "value": "$accent-palette.700",
       "type": "color"
     }
   }

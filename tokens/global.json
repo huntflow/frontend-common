@@ -1,5 +1,9 @@
 {
   "defaut-palette": {
+    "0": {
+      "value": "#FFF",
+      "type": "color"
+    },
     "50": {
       "value": "#fafcfc",
       "type": "color"
