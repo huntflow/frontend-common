@@ -29,6 +29,19 @@ StyleDictionary.registerTransform({
   transformer: (token) => px(token.original.value),
 });
 
+const fontWeightMap = {
+  Regular: '400',
+  Medium: '500',
+  Semibold: '700',
+};
+StyleDictionary.registerTransform({
+  name: 'hf/fontWeight',
+  type: 'value',
+  matcher: (token) =>
+    ['fontWeights'].includes(token.original.type),
+  transformer: (token) => fontWeightMap[token.original.value],
+});
+
 StyleDictionary.registerTransform({
   name: 'hf/shadow',
   type: 'value',
@@ -56,6 +69,7 @@ module.exports = {
         'color/css',
         'hf/px',
         'hf/shadow',
+        'hf/fontWeight'
       ],
       buildPath: 'src/tokens/',
       files: [
