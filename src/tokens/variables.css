@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 29 Nov 2021 12:52:53 GMT
+ * Generated on Tue, 30 Nov 2021 08:18:37 GMT
  */
 
 :root {
@@ -172,53 +172,53 @@
   --accentBgBtnDisabled: var(--accentPalette100);
   --accentBgBtn: var(--accentPalette500);
   --accentTextBtn: var(--defautPalette0);
-  --buttonXsTextFontSize: [object Object];
+  --buttonXsTextFontSize: var(--fontSizeXs);
   --buttonXsTextLineHeight: var(--lineHeightInterface);
-  --buttonXsTextFontWeight: [object Object];
+  --buttonXsTextFontWeight: var(--fontWeightRegular);
   --buttonXsTextFontFamily: var(--fontFamily);
-  --buttonSTextFontSize: [object Object];
+  --buttonSTextFontSize: var(--fontSizeS);
   --buttonSTextLineHeight: var(--lineHeightInterface);
-  --buttonSTextFontWeight: [object Object];
+  --buttonSTextFontWeight: var(--fontWeightRegular);
   --buttonSTextFontFamily: var(--fontFamily);
-  --inputErrorSubscriptionFontSize: [object Object];
+  --inputErrorSubscriptionFontSize: var(--fontSizeXs);
   --inputErrorSubscriptionLineHeight: var(--lineHeightInterface);
-  --inputErrorSubscriptionFontWeight: [object Object];
+  --inputErrorSubscriptionFontWeight: var(--fontWeightRegular);
   --inputErrorSubscriptionFontFamily: var(--fontFamily);
-  --inputTextFontSize: [object Object];
+  --inputTextFontSize: var(--fontSizeS);
   --inputTextLineHeight: var(--lineHeightInterface);
-  --inputTextFontWeight: [object Object];
+  --inputTextFontWeight: var(--fontWeightRegular);
   --inputTextFontFamily: var(--fontFamily);
-  --inputLabelFontSize: [object Object];
+  --inputLabelFontSize: var(--fontSizeS);
   --inputLabelLineHeight: var(--lineHeightInterface);
-  --inputLabelFontWeight: [object Object];
+  --inputLabelFontWeight: var(--fontWeightMedium);
   --inputLabelFontFamily: var(--fontFamily);
-  --headerSecondaryTextFontSize: [object Object];
+  --headerSecondaryTextFontSize: var(--fontSizeXs);
   --headerSecondaryTextLineHeight: var(--lineHeightInterface);
-  --headerSecondaryTextFontWeight: [object Object];
+  --headerSecondaryTextFontWeight: var(--fontWeightRegular);
   --headerSecondaryTextFontFamily: var(--fontFamily);
-  --headerBaseTextFontSize: [object Object];
+  --headerBaseTextFontSize: var(--fontSizeS);
   --headerBaseTextLineHeight: var(--lineHeightInterface);
-  --headerBaseTextFontWeight: [object Object];
+  --headerBaseTextFontWeight: var(--fontWeightRegular);
   --headerBaseTextFontFamily: var(--fontFamily);
-  --headerH4TextCase: [object Object];
-  --headerH4FontSize: [object Object];
+  --headerH4TextCase: var(--textCaseUppercase);
+  --headerH4FontSize: var(--fontSizeXxs);
   --headerH4LineHeight: var(--lineHeightInterface);
-  --headerH4FontWeight: [object Object];
+  --headerH4FontWeight: var(--fontWeightMedium);
   --headerH4FontFamily: var(--fontFamily);
-  --headerH3FontSize: [object Object];
+  --headerH3FontSize: var(--fontSizeMs);
   --headerH3LineHeight: var(--lineHeightInterface);
-  --headerH3FontWeight: [object Object];
+  --headerH3FontWeight: var(--fontWeightMedium);
   --headerH3FontFamily: var(--fontFamily);
-  --headerH2FontSize: [object Object];
+  --headerH2FontSize: var(--fontSizeM);
   --headerH2LineHeight: var(--lineHeightInterface);
-  --headerH2FontWeight: [object Object];
+  --headerH2FontWeight: var(--fontWeightMedium);
   --headerH2FontFamily: var(--fontFamily);
-  --headerH1FontSize: [object Object];
+  --headerH1FontSize: var(--fontSizeLm);
   --headerH1LineHeight: var(--lineHeightInterface);
-  --headerH1FontWeight: [object Object];
+  --headerH1FontWeight: var(--fontWeightMedium);
   --headerH1FontFamily: var(--fontFamily);
-  --headerDisplayFontSize: [object Object];
+  --headerDisplayFontSize: var(--fontSizeL);
   --headerDisplayLineHeight: var(--lineHeightInterface);
-  --headerDisplayFontWeight: [object Object];
+  --headerDisplayFontWeight: var(--fontWeightMedium);
   --headerDisplayFontFamily: var(--fontFamily);
 }
