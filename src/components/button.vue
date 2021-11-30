@@ -1,9 +1,11 @@
 <template>
-  <button :class="classNames" :style="style" v-bind="$attrs" v-on="$listeners"><slot /></button>
+  <button :class="classNames" :style="style" v-bind="$attrs" v-on="$listeners">
+    <slot />
+  </button>
 </template>
 
 <script>
-const AVAILABLE_THEMES = ['default', 'accent', 'success', 'danger', 'warning'];
+const AVAILABLE_THEMES = ['default', 'accent', 'success', 'error', 'warning'];
 const AVAILABLE_PROMINENCE = ['primary', 'secondary', 'weak'];
 
 export default {
@@ -11,34 +13,34 @@ export default {
   props: {
     size: {
       type: String,
-      default: 's'
+      default: 's',
     },
     theme: {
       type: String,
       default: 'default',
       validator(value) {
-        return AVAILABLE_THEMES.includes(value)
-      }
+        return AVAILABLE_THEMES.includes(value);
+      },
     },
-    prominence: { // todo: придумать с дизами нормальное слово
+    prominence: {
+      // todo: придумать с дизами нормальное слово
       type: String,
       default: 'weak',
       validator(value) {
-        return AVAILABLE_PROMINENCE.includes(value)
-      }
-    }
+        return AVAILABLE_PROMINENCE.includes(value);
+      },
+    },
   },
   computed: {
     classNames() {
-      return {
-        [this.$style.button]: true,
-        [this.$style[`size-${this.size}`]]: true,
-        [this.$style[`t-${this.theme}`]]: true,
-        [this.$style[`p-${this.prominence}`]]: true,
-        [this.$style.outline]: this.border,
-      }
-    }
-  }
+      return [
+        this.$style.button,
+        this.$style[`size-${this.size}`],
+        this.$style[`t-${this.theme}`],
+        this.$style[`p-${this.prominence}`],
+      ];
+    },
+  },
 };
 </script>
 
@@ -51,8 +53,16 @@ export default {
   cursor: pointer;
 }
 
+.size-xs {
+  font-size: var(--buttonXsTextFontSize);
+  line-height: var(--buttonXsTextLineHeight);
+  padding: 0 var(--spaceS);
+  height: var(--inputHeightXs);
+  border-radius: var(--radiusXs);
+}
+
 .size-s {
-  font-size: var(--fontSizeS);
+  font-size: var(--buttonSTextFontSize);
   line-height: var(--buttonSTextLineHeight);
   padding: 0 var(--spaceSm);
   height: var(--inputHeightS);
@@ -66,6 +76,14 @@ export default {
 .t-accent:hover {
   background-color: var(--accentBgBtnHover);
   color: var(--accentTextBtnHover);
+}
+.t-accent:disabled {
+  background-color: var(--accentBgBtnDisabled);
+  color: var(--accentTextBtnDisabled);
+}
+.t-accent:focus {
+  background-color: var(--accentBgBtnActive);
+  color: var(--accentTextBtnActive);
 }
 
 .t-default {
