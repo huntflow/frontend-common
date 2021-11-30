@@ -51,10 +51,13 @@ export default {
   font-family: sans-serif; /* token */
   text-align: center;
   cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
 }
 
 .size-xs {
   font-size: var(--buttonXsTextFontSize);
+  font-weight: var(--buttonXsTextFontWeight);
   line-height: var(--buttonXsTextLineHeight);
   padding: 0 var(--spaceS);
   height: var(--inputHeightXs);
@@ -63,46 +66,63 @@ export default {
 
 .size-s {
   font-size: var(--buttonSTextFontSize);
+  font-weight: var(--buttonSTextFontWeight);
   line-height: var(--buttonSTextLineHeight);
   padding: 0 var(--spaceSm);
   height: var(--inputHeightS);
   border-radius: var(--radiusXs);
 }
 
-.t-accent {
-  background-color: var(--accentBgBtn);
-  color: var(--accentTextBtn);
-}
-.t-accent:hover {
-  background-color: var(--accentBgBtnHover);
-  color: var(--accentTextBtnHover);
-}
-.t-accent:disabled {
-  background-color: var(--accentBgBtnDisabled);
-  color: var(--accentTextBtnDisabled);
-}
-.t-accent:focus {
-  background-color: var(--accentBgBtnActive);
-  color: var(--accentTextBtnActive);
-}
-
 .t-default {
-  border: 1px solid var(--defaultBorderBtn);
+  border-color: var(--defaultBorderBtn);
   background-color: var(--defaultBgBtn);
   color: var(--defaultTextBtn);
 }
 .t-default:hover {
+  border-color: var(--defaultBorderBtnHover);
   background-color: var(--defaultBgBtnHover);
   color: var(--defaultTextBtnHover);
 }
+.t-default:disabled {
+  border-color: var(--defaultBorderBtnDisabled);
+  background-color: var(--defaultBgBtnDisabled);
+  color: var(--defaultTextBtnDisabled);
+}
+.t-default:focus {
+  border-color: var(--defaultBorderBtnActive);
+  background-color: var(--defaultBgBtnActive);
+  color: var(--defaultTextBtnActive);
+}
 
 .t-default.p-weak {
-  border: 1px solid var(--defaultBorderBtnWeak);
+  border-color: var(--defaultBorderBtnWeak);
   background-color: var(--defaultBgBtnWeak);
   color: var(--defaultTextBtnWeak);
 }
 .t-default.p-weak:hover {
+  border-color: var(--defaultBorderBtnWeakHover);
   background-color: var(--defaultBgBtnWeakHover);
   color: var(--defaultTextBtnWeakHover);
+}
+
+.t-accent {
+  border-color: var(--accentBorderBtn);
+  background-color: var(--accentBgBtn);
+  color: var(--accentTextBtn);
+}
+.t-accent:hover {
+  border-color: var(--accentBorderBtnHover);
+  background-color: var(--accentBgBtnHover);
+  color: var(--accentTextBtnHover);
+}
+.t-accent:disabled {
+  border-color: var(--accentBorderBtnDisabled);
+  background-color: var(--accentBgBtnDisabled);
+  color: var(--accentTextBtnDisabled);
+}
+.t-accent:focus {
+  border-color: var(--accentBorderBtnActive);
+  background-color: var(--accentBgBtnActive);
+  color: var(--accentTextBtnActive);
 }
 </style>
