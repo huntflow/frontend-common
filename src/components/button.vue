@@ -1,5 +1,5 @@
 <template>
-  <button :class="classNames" :style="style" v-bind="$attrs" v-on="$listeners">
+  <button :class="classNames" v-bind="$attrs" v-on="$listeners">
     <slot />
   </button>
 </template>
@@ -48,7 +48,7 @@ export default {
 .button {
   all: unset;
   box-sizing: border-box;
-  font-family: sans-serif; /* token */
+  font-family: var(--buttonSTextFontFamily);
   text-align: center;
   cursor: pointer;
   border-width: 1px;

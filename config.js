@@ -42,6 +42,17 @@ StyleDictionary.registerTransform({
   transformer: (token) => fontWeightMap[token.original.value],
 });
 
+const fontFamilyMap = {
+  'Graphik LC': '"hunt-kit-graphik"'
+};
+StyleDictionary.registerTransform({
+  name: 'hf/fontFamily',
+  type: 'value',
+  matcher: (token) =>
+    ['fontFamilies'].includes(token.original.type),
+  transformer: (token) => fontFamilyMap[token.original.value],
+});
+
 StyleDictionary.registerTransform({
   name: 'hf/shadow',
   type: 'value',
@@ -69,7 +80,8 @@ module.exports = {
         'color/css',
         'hf/px',
         'hf/shadow',
-        'hf/fontWeight'
+        'hf/fontWeight',
+        'hf/fontFamily'
       ],
       buildPath: 'src/tokens/',
       files: [

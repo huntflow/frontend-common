@@ -11,8 +11,7 @@ export default {
   },
 };
 
-const Template = (args, { argTypes }) => ({
-  props: Object.keys(argTypes),
+const Template = () => ({
   components: { BaseButton },
   data() {
     return {

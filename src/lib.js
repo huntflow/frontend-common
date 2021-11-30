@@ -1,4 +1,4 @@
-import './tokens/variables.css';
+import './lib.css';
 
 import * as allTokens from './tokens/tokens';
 
