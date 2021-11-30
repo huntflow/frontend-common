@@ -104,6 +104,16 @@ export default {
   background-color: var(--defaultBgBtnWeakHover);
   color: var(--defaultTextBtnWeakHover);
 }
+.t-default.p-weak:disabled {
+  border-color: var(--defaultBorderBtnWeakDisabled);
+  background-color: var(--defaultBgBtnWeakDisabled);
+  color: var(--defaultTextBtnWeakDisabled);
+}
+.t-default.p-weak:focus {
+  border-color: var(--defaultBorderBtnWeakActive);
+  background-color: var(--defaultBgBtnWeakActive);
+  color: var(--defaultTextBtnWeakActive);
+}
 
 .t-accent {
   border-color: var(--accentBorderBtn);
