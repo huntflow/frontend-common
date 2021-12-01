@@ -54,6 +54,7 @@ export default {
 
 .root {
   box-shadow: var(--shadowModal);
+  border-radius: var(--radiusM);
 }
 
 .content {
