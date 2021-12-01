@@ -1,13 +1,13 @@
 <template>
   <div :class="[$style.root, $style[`size-${size}`]]">
     <div :class="$style.header">
-      <h3 :class='$style.title'>{{ title }}</h3>
+      <base-heading :level="3" size="2">{{ title }}</base-heading>
     </div>
     <div :class="$style.content">
       <div :class="$style.main">
         <slot />
       </div>
-      <div :class="$style.side"><slot name="side" /></div>
+      <div v-if="size === 'm'" :class="$style.side"><slot name="side" /></div>
     </div>
     <div :class="$style.footer">
       <slot name="footer" />
@@ -16,8 +16,11 @@
 </template>
 
 <script>
+import BaseHeading from './heading.vue';
+
 export default {
   name: 'HuntKitPopupLayout',
+  components: { BaseHeading },
   props: {
     size: {
       type: String,
@@ -34,15 +37,18 @@ export default {
 <style module>
 .root,
 .header,
-.title,
 .content,
 .main,
 .side,
 .footer {
   all: unset;
-  font-family: var(--fontFamily);
   display: block;
   box-sizing: border-box;
+
+  line-height: var(--headerBaseTextLineHeight);
+  font-size: var(--headerBaseTextFontSize);
+  font-weight: var(--headerBaseTextFontWeight);
+  font-family: var(--headerBaseTextFontFamily);
   color: var(--defautPalette700);
 }
 
@@ -65,13 +71,6 @@ export default {
 
 .size-m .header {
   padding-bottom: var(--spaceXs);
-}
-
-.size-m .title { /* todo: использовать компонент заголовка? */
-  font-family: var(--headerH2FontFamily);
-  font-size: var(--headerH2FontSize);
-  line-height: var(--headerH2LineHeight);
-  font-weight: var(--headerH2FontWeight);
 }
 
 .size-m .content {
@@ -104,5 +103,18 @@ export default {
 
 .size-s {
   width: 512px;
+  padding: var(--spaceM) var(--spaceMl);
+}
+
+.size-s .header {
+  padding-bottom: var(--spaceSm);
+}
+
+.size-s .footer {
+  padding-top: var(--spaceS);
+}
+
+.size-s .footer > * + * {
+  margin-left: var(--spaceXs);
 }
 </style>
