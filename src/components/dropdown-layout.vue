@@ -18,7 +18,7 @@ import BaseHeading from './heading.vue';
 
 export default {
   name: 'HuntKitDropdownLayout',
-  components: { BaseHeading },
+  components: { BaseHeading},
   props: {
     title: {
       type: String,
@@ -68,7 +68,6 @@ export default {
 }
 
 .footer {
-  display: flex;
   padding: var(--spaceSm);
 }
 

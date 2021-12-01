@@ -1,5 +1,6 @@
 import PopupLayout from './popup-layout.vue';
 import BaseButton from './button.vue';
+import FormFooter from './form-footer.vue';
 
 export default {
   title: 'Example/PopupLayout',
@@ -13,7 +14,7 @@ export default {
 };
 
 const Template = (args, { argTypes }) => ({
-  components: { PopupLayout, BaseButton },
+  components: { PopupLayout, BaseButton, FormFooter },
   props: Object.keys(argTypes),
   data() {
     return args;
@@ -23,8 +24,10 @@ const Template = (args, { argTypes }) => ({
     Основной контент
     <template #side>Боковушечка</template>
     <template #footer>
-      <base-button theme="accent" size="s">Сохранить</base-button>
-      <base-button theme="default" size="s" prominence="weak">Отмена</base-button>
+      <form-footer>
+        <base-button theme="accent" size="s">Сохранить</base-button>
+        <base-button theme="default" size="s" prominence="weak">Отмена</base-button>
+      </form-footer>
     </template>
   </popup-layout>
   `,

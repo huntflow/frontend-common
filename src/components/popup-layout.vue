@@ -61,10 +61,6 @@ export default {
   display: flex;
 }
 
-.footer {
-  display: flex;
-}
-
 .size-m {
   width: 768px;
   padding: var(--spaceM) var(--spaceMl);

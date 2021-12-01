@@ -1,5 +1,6 @@
 import DropdownLayout from './dropdown-layout.vue';
 import BaseButton from './button.vue';
+import FormFooter from './form-footer.vue';
 
 export default {
   title: 'Example/DropdownLayout',
@@ -8,7 +9,7 @@ export default {
 };
 
 const Template = (args, { argTypes }) => ({
-  components: { DropdownLayout, BaseButton },
+  components: { DropdownLayout, BaseButton, FormFooter },
   props: Object.keys(argTypes),
   data() {
     return args;
@@ -18,8 +19,13 @@ const Template = (args, { argTypes }) => ({
     Содержимое дропдауна
 
     <template #footer>
-      <base-button theme="accent" size="xs">Сохранить</base-button>
-      <base-button theme="default" size="xs" prominence="weak">Отмена</base-button>
+      <form-footer spacing="xs">
+        <base-button theme="accent" size="xs">Сохранить</base-button>
+        <base-button theme="default" size="xs" prominence="weak">Отмена</base-button>
+        <template #right>
+          Сноска
+        </template>
+      </form-footer>
     </template>
   </dropdown-layout>
   `,
