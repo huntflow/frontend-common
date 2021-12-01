@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 30 Nov 2021 13:17:18 GMT
+ * Generated on Wed, 01 Dec 2021 11:45:04 GMT
  */
 
 export const defautPalette0 = "#FFF";
@@ -148,6 +148,7 @@ export const buttonXsTextTextDecoration = "0";
 export const buttonXsTextTextCase = "0";
 export const spaceXl = "64px";
 export const spaceL = "48px";
+export const spaceMl = "40px";
 export const spaceM = "32px";
 export const spaceSm = "24px";
 export const spaceS = "16px";
