@@ -49,7 +49,7 @@ export default {
   font-size: var(--headerBaseTextFontSize);
   font-weight: var(--headerBaseTextFontWeight);
   font-family: var(--headerBaseTextFontFamily);
-  color: var(--defautPalette700);
+  color: var(--defaultPalette700);
 }
 
 .root {
@@ -75,8 +75,8 @@ export default {
 }
 
 .size-m .content {
-  border-top: 1px solid var(--defautPalette100);
-  border-bottom: 1px solid var(--defautPalette100);
+  border-top: 1px solid var(--defaultPalette100);
+  border-bottom: 1px solid var(--defaultPalette100);
 }
 
 .size-m .main {
@@ -86,7 +86,7 @@ export default {
 
 .size-m .side {
   width: 38.5%;
-  border-left: 1px solid var(--defautPalette100);
+  border-left: 1px solid var(--defaultPalette100);
   padding: var(--spaceSm) 0 var(--spaceSm) var(--spaceSm);
 }
 
