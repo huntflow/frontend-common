@@ -6,49 +6,46 @@ export default {
   argTypes: {
     size: {
       control: { type: 'select' },
-      options: ['small', 'medium', 'large'],
+      options: ['xs', 's', 'm', 'l'],
+    },
+    theme: {
+      control: { type: 'select' },
+      options: [
+        'default',
+        'accent',
+        'success',
+        'error'
+      ],
+    },
+    prominence: {
+      control: { type: 'select' },
+      options: [
+        'primary',
+        'weak'
+      ],
+    },
+    disabled: {
+      control: { type: 'boolean' }
     },
   },
 };
 
-const Template = () => ({
+const Template = (args, { argTypes }) => ({
   components: { BaseButton },
+  props: Object.keys(argTypes),
   data() {
-    return {
-      size: 's',
-      theme: 'default',
-      prominence: 'primary',
-      disabled: false
-    };
+    return args;
   },
   template: `
-  <div>
-  <select v-model="size">
-    <option value="xs">xs</option>
-    <option value="s">s</option>
-    <option value="m">m</option>
-  </select>
-  <select v-model="theme">
-    <option value="default">default</option>
-    <option value="accent">accent</option>
-    <option value="success">success</option>
-    <option value="error">error</option>
-  </select>
-  <select v-model="prominence">
-    <option value="primary">primary</option>
-    <option value="weak">weak</option>
-  </select>
-  <label>
-    <input type="checkbox" v-model="disabled" />
-    Disabled
-  </label>
-  <hr />
-  <base-button :size="size" :theme="theme" :prominence="prominence" :disabled="disabled" v-bind="$attrs" v-on="$listeners">Button</base-button>
-  </div>
+  <base-button v-bind="$attrs" v-bind="$data" v-on="$listeners">{{ label }}</base-button>
   `,
 });
 
 export const Default = Template.bind({});
 Default.args = {
   label: 'Button',
+  size: 's',
+  theme: 'default',
+  prominence: 'primary',
+  disabled: false
 };
