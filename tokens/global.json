@@ -1,5 +1,5 @@
 {
-  "defaut-palette": {
+  "default-palette": {
     "0": {
       "value": "#FFF",
       "type": "color"
@@ -525,6 +525,10 @@
     },
     "l": {
       "value": "48",
+      "type": "spacing"
+    },
+    "ml": {
+      "value": "40",
       "type": "spacing"
     },
     "m": {

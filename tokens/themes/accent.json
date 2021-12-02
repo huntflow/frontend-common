@@ -1,7 +1,7 @@
 {
   "accent": {
     "text-btn": {
-      "value": "$defaut-palette.0",
+      "value": "$default-palette.0",
       "type": "color"
     },
     "bg-btn": {
@@ -33,7 +33,7 @@
       "type": "color"
     },
     "text-btn-hover": {
-      "value": "$defaut-palette.0",
+      "value": "$default-palette.0",
       "type": "color"
     },
     "text-disabled": {
