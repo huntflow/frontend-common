@@ -37,7 +37,7 @@ const Template = (args, { argTypes }) => ({
     return args;
   },
   template: `
-  <base-button v-bind="$attrs" v-bind="$data" v-on="$listeners">{{ label }}</base-button>
+  <base-button v-bind="$data" v-on="$listeners">{{ label }}</base-button>
   `,
 });
 
