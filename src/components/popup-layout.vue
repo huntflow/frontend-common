@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import BaseHeading from './heading.vue';
+import BaseHeading from './base-heading.vue';
 
 export default {
   name: 'HuntKitPopupLayout',

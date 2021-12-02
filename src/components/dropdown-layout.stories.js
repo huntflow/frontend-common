@@ -1,5 +1,5 @@
 import DropdownLayout from './dropdown-layout.vue';
-import BaseButton from './button.vue';
+import BaseButton from './base-button.vue';
 import FormFooter from './form-footer.vue';
 
 export default {
