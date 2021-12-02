@@ -1,4 +1,6 @@
-import * as allTokens from './tokens';
+import './lib.css';
+
+import * as allTokens from './tokens/tokens';
 
 export const tokens = allTokens;
 

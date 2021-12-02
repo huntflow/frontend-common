@@ -1,0 +1,33 @@
+{
+
+  "error": {
+    "color-text": {
+      "value": "$error-palette.500",
+      "type": "color"
+    },
+    "color-bg": {
+      "value": "$error-palette.100",
+      "type": "color"
+    },
+    "color-cta": {
+      "value": "$error-palette.500",
+      "type": "color"
+    },
+    "color-cta-hover": {
+      "value": "$error-palette.600",
+      "type": "color"
+    },
+    "color-cta_disabled": {
+      "value": "$error-palette.100",
+      "type": "color"
+    },
+    "color-icon": {
+      "value": "$error-palette.500",
+      "type": "color"
+    },
+    "border-active": {
+      "value": "$error-palette.500",
+      "type": "color"
+    }
+  }
+}

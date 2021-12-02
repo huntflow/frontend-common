@@ -1,0 +1,68 @@
+{
+  "default": {
+    "text": {
+      "value": "$defaut-palette.700",
+      "type": "color"
+    },
+    "bg-btn": {
+      "value": "$defaut-palette.300",
+      "type": "color"
+    },
+    "bg-btn-weak": {
+      "value": "$base-palette.white",
+      "type": "color"
+    },
+    "bg-strong": {
+      "value": "$defaut-palette.50",
+      "type": "color"
+    },
+    "text-btn-weak": {
+      "value": "$defaut-palette.900",
+      "type": "color"
+    },
+    "text-weak-hover": {
+      "value": "$defaut-palette.400",
+      "type": "color"
+    },
+    "text-weak": {
+      "value": "$defaut-palette.300",
+      "type": "color"
+    },
+    "text-disabled": {
+      "value": "$defaut-palette.100",
+      "type": "color"
+    },
+    "text-btn": {
+      "value": "$defaut-palette.0",
+      "type": "color"
+    },
+    "border-btn": {
+      "value": "$defaut-palette.100",
+      "type": "color"
+    },
+    "border-btn-hover": {
+      "value": "$defaut-palette.400",
+      "type": "color"
+    },
+    "border-btn-weak": {
+      "value": "$defaut-palette.100",
+      "type": "color"
+    },
+    "border-btn-weak-hover": {
+      "value": "$defaut-palette.400",
+      "type": "color"
+    },
+    "default-divider": {
+      "value": "$defaut-palette.200",
+      "type": "color"
+    },
+    "bg": {
+      "value": "$base-palette.white",
+      "type": "color"
+    },
+    "icon": {
+      "value": "$defaut-palette.900",
+      "type": "color"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "accent": {
+    "text-btn": {
+      "value": "$defaut-palette.0",
+      "type": "color"
+    },
+    "bg-btn": {
+      "value": "$accent-palette.500",
+      "type": "color"
+    },
+    "bg-btn-disabled": {
+      "value": "$accent-palette.100",
+      "type": "color"
+    },
+    "bg": {
+      "value": "$accent-palette.500",
+      "type": "color"
+    },
+    "bg-btn-hover": {
+      "value": "$accent-palette.700",
+      "type": "color"
+    },
+    "bg-weak": {
+      "value": "$accent-palette.100",
+      "type": "color"
+    },
+    "text": {
+      "value": "$accent-palette.500",
+      "type": "color"
+    },
+    "text-hover": {
+      "value": "$accent-palette.600",
+      "type": "color"
+    },
+    "text-btn-hover": {
+      "value": "$defaut-palette.0",
+      "type": "color"
+    },
+    "text-disabled": {
+      "value": "$accent-palette.300",
+      "type": "color"
+    },
+    "icon": {
+      "value": "$accent-palette.500",
+      "type": "color"
+    },
+    "border-btn": {
+      "value": "$accent-palette.500",
+      "type": "color"
+    },
+    "border-hover": {
+      "value": "$accent-palette.700",
+      "type": "color"
+    }
+  }
+}

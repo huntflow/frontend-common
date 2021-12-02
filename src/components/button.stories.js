@@ -6,18 +6,46 @@ export default {
   argTypes: {
     size: {
       control: { type: 'select' },
-      options: ['small', 'medium', 'large'],
+      options: ['xs', 's', 'm', 'l'],
+    },
+    theme: {
+      control: { type: 'select' },
+      options: [
+        'default',
+        'accent',
+        'success',
+        'error'
+      ],
+    },
+    prominence: {
+      control: { type: 'select' },
+      options: [
+        'primary',
+        'weak'
+      ],
+    },
+    disabled: {
+      control: { type: 'boolean' }
     },
   },
 };
 
 const Template = (args, { argTypes }) => ({
-  props: Object.keys(argTypes),
   components: { BaseButton },
-  template: '<base-button v-bind="$attrs" v-on="$listeners">Button</base-button>',
+  props: Object.keys(argTypes),
+  data() {
+    return args;
+  },
+  template: `
+  <base-button v-bind="$attrs" v-bind="$data" v-on="$listeners">{{ label }}</base-button>
+  `,
 });
 
 export const Default = Template.bind({});
 Default.args = {
   label: 'Button',
+  size: 's',
+  theme: 'default',
+  prominence: 'primary',
+  disabled: false
 };

@@ -1,0 +1,22 @@
+@import "./tokens/variables.css";
+
+@font-face {
+  font-family: 'hunt-kit-graphik';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./fonts/400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'hunt-kit-graphik';
+  font-weight: 500;
+  font-style: normal;
+  src: url('./fonts/500.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'hunt-kit-graphik';
+  font-weight: 700;
+  font-style: normal;
+  src: url('./fonts/700.woff2') format('woff2');
+}
