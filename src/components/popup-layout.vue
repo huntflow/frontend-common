@@ -94,10 +94,6 @@ export default {
   padding: var(--spaceSm) 0 0;
 }
 
-.size-m .footer > * + * {
-  margin-left: var(--spaceXs);
-}
-
 .size-s {
   width: 512px;
   padding: var(--spaceM) var(--spaceMl);

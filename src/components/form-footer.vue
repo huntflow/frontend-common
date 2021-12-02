@@ -41,10 +41,6 @@ export default {
 .left,
 .right {
   display: flex;
-}
-
-.left > * + *,
-.right > * + * {
-  margin-left: var(--spacing);
+  column-gap: var(--spacing);
 }
 </style>

@@ -70,8 +70,4 @@ export default {
 .footer {
   padding: var(--spaceSm);
 }
-
-.footer > * + * {
-  margin-left: var(--spaceXs);
-}
 </style>

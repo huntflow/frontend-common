@@ -1,5 +1,5 @@
 <template>
-  <component :is="tagName" :class="$style[`size-${size}`]" v-bind="$attrs" v-on="$listeners">
+  <component :is="tagName" :class="$style[`size-${size}`]" v-bind="$attrs">
     <slot />
   </component>
 </template>
@@ -8,6 +8,7 @@
 const sizes = ['1', '2', '3', '4', '5', '6', 'display'];
 
 export default {
+  inheritAttrs: false,
   name: 'HuntKitHeading',
   props: {
     size: {
