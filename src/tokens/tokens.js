@@ -1,19 +1,19 @@
 /**
  * Do not edit directly
- * Generated on Tue, 30 Nov 2021 13:17:18 GMT
+ * Generated on Thu, 02 Dec 2021 08:10:04 GMT
  */
 
-export const defautPalette0 = "#FFF";
-export const defautPalette50 = "#fafcfc";
-export const defautPalette100 = "#e4e8ee";
-export const defautPalette200 = "#c1c9d0";
-export const defautPalette300 = "#a2abb7";
-export const defautPalette400 = "#8892A2";
-export const defautPalette500 = "#6b7385";
-export const defautPalette600 = "#505669";
-export const defautPalette700 = "#3c4055";
-export const defautPalette800 = "#36384D";
-export const defautPalette900 = "#2b2e44";
+export const defaultPalette0 = "#FFF";
+export const defaultPalette50 = "#fafcfc";
+export const defaultPalette100 = "#e4e8ee";
+export const defaultPalette200 = "#c1c9d0";
+export const defaultPalette300 = "#a2abb7";
+export const defaultPalette400 = "#8892A2";
+export const defaultPalette500 = "#6b7385";
+export const defaultPalette600 = "#505669";
+export const defaultPalette700 = "#3c4055";
+export const defaultPalette800 = "#36384D";
+export const defaultPalette900 = "#2b2e44";
 export const accentPalette50 = "#EFFCFD";
 export const accentPalette100 = "#CFF4FA";
 export const accentPalette200 = "#80E3F2";
@@ -148,6 +148,7 @@ export const buttonXsTextTextDecoration = "0";
 export const buttonXsTextTextCase = "0";
 export const spaceXl = "64px";
 export const spaceL = "48px";
+export const spaceMl = "40px";
 export const spaceM = "32px";
 export const spaceSm = "24px";
 export const spaceS = "16px";
