@@ -1,9 +1,5 @@
 {
   "accent": {
-    "text-btn": {
-      "value": "$default-palette.0",
-      "type": "color"
-    },
     "bg-btn": {
       "value": "$accent-palette.500",
       "type": "color"
@@ -32,10 +28,6 @@
       "value": "$accent-palette.600",
       "type": "color"
     },
-    "text-btn-hover": {
-      "value": "$default-palette.0",
-      "type": "color"
-    },
     "text-disabled": {
       "value": "$accent-palette.300",
       "type": "color"
@@ -48,8 +40,16 @@
       "value": "$accent-palette.500",
       "type": "color"
     },
-    "border-hover": {
+    "border-btn-hover": {
       "value": "$accent-palette.700",
+      "type": "color"
+    },
+    "border-btn-disabled": {
+      "value": "$accent-palette.200",
+      "type": "color"
+    },
+    "border-input-focus": {
+      "value": "$accent-palette.500",
       "type": "color"
     }
   }

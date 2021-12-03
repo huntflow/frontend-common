@@ -53,21 +53,35 @@ export default {
   font-weight: var(--inputTextFontWeight);
   font-family: var(--inputTextFontFamily);
 
-  background-color: #fafcfc;
-  border: 1px solid #E4E8EE;
+  background-color: var(--defaultBgInput);
+  border: 1px solid var(--defaultBorderInput);
   border-radius: var(--radiusXs);
 }
 
 .invalid {
-  border-color: #C10A2C;
+  border-color: var(--errorBorderInputError);
 }
 
 .input:focus {
-  border-color: #1DA1B5;
+  border-color: var(--accentBorderInputFocus);
+}
+
+.input:disabled {
+  color: var(--defaultTextDisabled);
+  border-color: var(--defaultBorderInput);
+}
+
+.input::placeholder {
+  color: var(--defaultTextPlaceholder);
 }
 
 .size-s {
   height: var(--inputHeightS);
   padding: 0 var(--spaceXs);
+}
+
+.size-xs {
+  height: var(--inputHeightXs);
+  padding: 0 var(--spaceXxs);
 }
 </style>
