@@ -47,6 +47,7 @@ export default {
 
   box-sizing: border-box;
   display: block;
+  width: 100px;
 
   font-size: var(--inputTextFontSize);
   line-height: var(--inputTextLineHeight);
