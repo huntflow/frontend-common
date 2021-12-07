@@ -44,8 +44,8 @@
       "value": "$success-palette.600",
       "type": "color"
     },
-    "border-btn-disabled": {
-      "value": "$success-palette.200",
+    "txt-btn": {
+      "value": "$success-palette.0",
       "type": "color"
     }
   }

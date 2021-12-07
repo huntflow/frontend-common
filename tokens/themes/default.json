@@ -28,10 +28,6 @@
       "value": "$default-palette.300",
       "type": "color"
     },
-    "text-disabled": {
-      "value": "$default-palette.100",
-      "type": "color"
-    },
     "text-btn": {
       "value": "$default-palette.0",
       "type": "color"
@@ -61,18 +57,6 @@
       "type": "color"
     },
     "bg-btn-disabled": {
-      "value": "$default-palette.100",
-      "type": "color"
-    },
-    "text-placeholder": {
-      "value": "$default-palette.200",
-      "type": "color"
-    },
-    "bg-input": {
-      "value": "$default-palette.50",
-      "type": "color"
-    },
-    "border-input": {
       "value": "$default-palette.100",
       "type": "color"
     }

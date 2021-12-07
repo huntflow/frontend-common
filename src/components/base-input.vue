@@ -47,41 +47,44 @@ export default {
 
   box-sizing: border-box;
   display: block;
-  width: 100px;
+  width: 100%;
 
-  font-size: var(--inputTextFontSize);
-  line-height: var(--inputTextLineHeight);
-  font-weight: var(--inputTextFontWeight);
-  font-family: var(--inputTextFontFamily);
-
-  background-color: var(--defaultBgInput);
-  border: 1px solid var(--defaultBorderInput);
+  border: 1px solid var(--inputBorder);
   border-radius: var(--radiusXs);
+  background-color: var(--inputBg);
 }
 
 .invalid {
-  border-color: var(--errorBorderInputError);
+  border-color: var(--inputBorderError);
 }
 
 .input:focus {
-  border-color: var(--accentBorderInputFocus);
+  border-color: var(--inputBorderFocus);
 }
 
 .input:disabled {
-  color: var(--defaultTextDisabled);
-  border-color: var(--defaultBorderInput);
+  color: var(--inputTextDisabled);
+  border-color: var(--inputBorder);
 }
 
 .input::placeholder {
-  color: var(--defaultTextPlaceholder);
+  color: var(--inputTextPlaceholder);
 }
 
 .size-s {
+  font-size: var(--buttonSTextFontSize);
+  line-height: var(--buttonSTextLineHeight);
+  font-weight: var(--buttonSTextFontWeight);
+  font-family: var(--buttonSTextFontFamily);
   height: var(--inputHeightS);
   padding: 0 var(--spaceXs);
 }
 
 .size-xs {
+  font-size: var(--buttonXsTextFontSize);
+  line-height: var(--buttonXsTextLineHeight);
+  font-weight: var(--buttonXsTextFontWeight);
+  font-family: var(--buttonXsTextFontFamily);
   height: var(--inputHeightXs);
   padding: 0 var(--spaceXxs);
 }

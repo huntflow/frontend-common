@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 03 Dec 2021 11:38:43 GMT
+ * Generated on Tue, 07 Dec 2021 12:18:17 GMT
  */
 
 :root {
@@ -14,6 +14,7 @@
   --warningPalette200: #FFCC78;
   --warningPalette100: #FFD797;
   --warningPalette50: #FFE2B4;
+  --warningPalette0: #FFffff;
   --xs: 1;
   --shadowDropdown: 0px 0px 15px 0px #DFE0E3;
   --shadowModal: 0px 10px 50px 0px #DFE0E3;
@@ -33,6 +34,7 @@
   --errorPalette200: #E69DAB;
   --errorPalette100: #F3CED5;
   --errorPalette50: #F9E6EA;
+  --errorPalette0: #ffffff;
   --xxxs: 2px;
   --inputHeightXs: 28px;
   --inputHeightM: 42px;
@@ -58,10 +60,6 @@
   --inputErrorSubscriptionTextDecoration: 0;
   --inputErrorSubscriptionParagraphSpacing: 0;
   --inputErrorSubscriptionLetterSpacing: 0;
-  --inputTextTextCase: 0;
-  --inputTextTextDecoration: 0;
-  --inputTextParagraphSpacing: 0;
-  --inputTextLetterSpacing: 0;
   --inputLabelTextCase: 0;
   --inputLabelTextDecoration: 0;
   --inputLabelParagraphSpacing: 0;
@@ -118,6 +116,7 @@
   --successPalette200: #6EDAA4;
   --successPalette100: #CFF3E1;
   --successPalette50: #E7F9F0;
+  --successPalette0: ##ffffff;
   --fontFamily: "hunt-kit-graphik";
   --accentPalette900: #0C4149;
   --accentPalette800: #0F535D;
@@ -129,6 +128,7 @@
   --accentPalette200: #80E3F2;
   --accentPalette100: #CFF4FA;
   --accentPalette50: #EFFCFD;
+  --accentPalette0: #ffffff;
   --defaultPalette900: #2b2e44;
   --defaultPalette800: #36384D;
   --defaultPalette700: #3c4055;
@@ -140,6 +140,7 @@
   --defaultPalette100: #e4e8ee;
   --defaultPalette50: #fafcfc;
   --defaultPalette0: #fffffff;
+  --warnigTxtBtn: var(--warningPalette0);
   --warnigIcon: var(--warningPalette500);
   --warnigBorderBtnHover: var(--warningPalette600);
   --warnigBorderBtn: var(--warningPalette500);
@@ -151,7 +152,7 @@
   --warnigBgBtnDisabled: var(--warningPalette300);
   --warnigBgBtnHover: var(--warningPalette600);
   --warnigBgBtn: var(--warningPalette500);
-  --successBorderBtnDisabled: var(--successPalette200);
+  --successTxtBtn: var(--successPalette0);
   --successBorderBtnHover: var(--successPalette600);
   --successBorderBtn: var(--successPalette500);
   --successIcon: var(--successPalette500);
@@ -163,7 +164,7 @@
   --successBgBtnHover: var(--successPalette600);
   --successBgBtnDisabled: var(--successPalette200);
   --successBgBtn: var(--successPalette500);
-  --errorBorderInputError: var(--errorPalette500);
+  --errorTxtBtn: var(--errorPalette0);
   --errorBorderBtnDisabled: var(--errorPalette200);
   --errorBorderBtnHover: var(--errorPalette600);
   --errorBorderBtn: var(--errorPalette500);
@@ -176,9 +177,6 @@
   --errorBgBtnHover: var(--errorPalette600);
   --errorBgBtnDisabled: var(--errorPalette200);
   --errorBgBtn: var(--errorPalette500);
-  --defaultBorderInput: var(--defaultPalette100);
-  --defaultBgInput: var(--defaultPalette50);
-  --defaultTextPlaceholder: var(--defaultPalette200);
   --defaultBgBtnDisabled: var(--defaultPalette100);
   --defaultBgBtnHover: var(--defaultPalette500);
   --defaultIcon: var(--defaultPalette900);
@@ -187,7 +185,6 @@
   --defaultBorderBtnHover: var(--defaultPalette500);
   --defaultBorderBtn: var(--defaultPalette400);
   --defaultTextBtn: var(--defaultPalette0);
-  --defaultTextDisabled: var(--defaultPalette100);
   --defaultTextWeak: var(--defaultPalette300);
   --defaultTextWeakHover: var(--defaultPalette400);
   --defaultTextBtnWeak: var(--defaultPalette900);
@@ -195,7 +192,7 @@
   --defaultBgBtnWeak: var(--defaultPalette0);
   --defaultBgBtn: var(--defaultPalette300);
   --defaultText: var(--defaultPalette700);
-  --accentBorderInputFocus: var(--accentPalette500);
+  --accentTextBtn: var(--accentPalette0);
   --accentBorderBtnDisabled: var(--accentPalette200);
   --accentBorderBtnHover: var(--accentPalette700);
   --accentBorderBtn: var(--accentPalette500);
@@ -216,14 +213,19 @@
   --buttonSTextLineHeight: var(--lineHeightInterface);
   --buttonSTextFontWeight: var(--fontWeightRegular);
   --buttonSTextFontFamily: var(--fontFamily);
+  --inputTextHint: var(--defaultPalette400);
+  --inputTextError: var(--errorPalette500);
+  --inputBorderError: var(--errorPalette500);
+  --inputBorderFocus: var(--accentPalette500);
+  --inputTextDisabled: var(--defaultPalette200);
+  --inputTextPlaceholder: var(--defaultPalette400);
+  --inputBorder: var(--defaultPalette100);
+  --inputBg: var(--defaultPalette50);
   --inputErrorSubscriptionFontSize: var(--fontSizeXs);
   --inputErrorSubscriptionLineHeight: var(--lineHeightInterface);
   --inputErrorSubscriptionFontWeight: var(--fontWeightRegular);
   --inputErrorSubscriptionFontFamily: var(--fontFamily);
-  --inputTextFontSize: var(--fontSizeS);
-  --inputTextLineHeight: var(--lineHeightInterface);
-  --inputTextFontWeight: var(--fontWeightRegular);
-  --inputTextFontFamily: var(--fontFamily);
+  --inputText: var(--defaultPalette700);
   --inputLabelFontSize: var(--fontSizeS);
   --inputLabelLineHeight: var(--lineHeightInterface);
   --inputLabelFontWeight: var(--fontWeightMedium);

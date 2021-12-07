@@ -48,8 +48,8 @@
       "value": "$error-palette.200",
       "type": "color"
     },
-    "border-input-error": {
-      "value": "$error-palette.500",
+    "txt_btn": {
+      "value": "$error-palette.0",
       "type": "color"
     }
   }

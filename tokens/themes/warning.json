@@ -43,6 +43,10 @@
     "icon": {
       "value": "$warning-palette.500",
       "type": "color"
+    },
+    "txt-btn": {
+      "value": "$warning-palette.0",
+      "type": "color"
     }
   }
 }

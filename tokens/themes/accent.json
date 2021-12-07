@@ -48,8 +48,8 @@
       "value": "$accent-palette.200",
       "type": "color"
     },
-    "border-input-focus": {
-      "value": "$accent-palette.500",
+    "text-btn": {
+      "value": "$accent-palette.0",
       "type": "color"
     }
   }

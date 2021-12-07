@@ -46,6 +46,10 @@
     }
   },
   "accent-palette": {
+    "0": {
+      "value": "#ffffff",
+      "type": "color"
+    },
     "50": {
       "value": "#EFFCFD",
       "type": "color"
@@ -93,6 +97,10 @@
     "type": "fontFamilies"
   },
   "success-palette": {
+    "0": {
+      "value": "##ffffff",
+      "type": "color"
+    },
     "50": {
       "value": "#E7F9F0",
       "type": "color"
@@ -575,6 +583,10 @@
     "type": "spacing"
   },
   "error-palette": {
+    "0": {
+      "value": "#ffffff",
+      "type": "color"
+    },
     "50": {
       "value": "#F9E6EA",
       "type": "color"
@@ -671,6 +683,10 @@
     "type": "borderWidth"
   },
   "warning-palette": {
+    "0": {
+      "value": "#FFffff",
+      "type": "color"
+    },
     "50": {
       "value": "#FFE2B4",
       "type": "color"
