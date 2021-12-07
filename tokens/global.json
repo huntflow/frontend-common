@@ -211,16 +211,16 @@
   "header": {
     "Display": {
       "fontFamily": {
-        "value": "$font-family"
+        "value": "{font-family}"
       },
       "fontWeight": {
-        "value": "$font-weight.medium"
+        "value": "{font-weight.medium}"
       },
       "lineHeight": {
-        "value": "$line-height.interface"
+        "value": "{line-height.interface}"
       },
       "fontSize": {
-        "value": "$font-size.l"
+        "value": "{font-size.l}"
       },
       "letterSpacing": {
         "value": "0"
@@ -237,16 +237,16 @@
     },
     "H1": {
       "fontFamily": {
-        "value": "$font-family"
+        "value": "{font-family}"
       },
       "fontWeight": {
-        "value": "$font-weight.medium"
+        "value": "{font-weight.medium}"
       },
       "lineHeight": {
-        "value": "$line-height.interface"
+        "value": "{line-height.interface}"
       },
       "fontSize": {
-        "value": "$font-size.lm"
+        "value": "{font-size.lm}"
       },
       "letterSpacing": {
         "value": "0"
@@ -263,16 +263,16 @@
     },
     "H2": {
       "fontFamily": {
-        "value": "$font-family"
+        "value": "{font-family}"
       },
       "fontWeight": {
-        "value": "$font-weight.medium"
+        "value": "{font-weight.medium}"
       },
       "lineHeight": {
-        "value": "$line-height.interface"
+        "value": "{line-height.interface}"
       },
       "fontSize": {
-        "value": "$font-size.m"
+        "value": "{font-size.m}"
       },
       "letterSpacing": {
         "value": "0"
@@ -289,16 +289,16 @@
     },
     "H3": {
       "fontFamily": {
-        "value": "$font-family"
+        "value": "{font-family}"
       },
       "fontWeight": {
-        "value": "$font-weight.medium"
+        "value": "{font-weight.medium}"
       },
       "lineHeight": {
-        "value": "$line-height.interface"
+        "value": "{line-height.interface}"
       },
       "fontSize": {
-        "value": "$font-size.ms"
+        "value": "{font-size.ms}"
       },
       "letterSpacing": {
         "value": "0"
@@ -315,16 +315,16 @@
     },
     "H4": {
       "fontFamily": {
-        "value": "$font-family"
+        "value": "{font-family}"
       },
       "fontWeight": {
-        "value": "$font-weight.medium"
+        "value": "{font-weight.medium}"
       },
       "lineHeight": {
-        "value": "$line-height.interface"
+        "value": "{line-height.interface}"
       },
       "fontSize": {
-        "value": "$font-size.xxs"
+        "value": "{font-size.xxs}"
       },
       "letterSpacing": {
         "value": "0"
@@ -336,21 +336,21 @@
         "value": "0"
       },
       "textCase": {
-        "value": "$text-case.uppercase"
+        "value": "{text-case.uppercase}"
       }
     },
     "base-text": {
       "fontFamily": {
-        "value": "$font-family"
+        "value": "{font-family}"
       },
       "fontWeight": {
-        "value": "$font-weight.regular"
+        "value": "{font-weight.regular}"
       },
       "lineHeight": {
-        "value": "$line-height.interface"
+        "value": "{line-height.interface}"
       },
       "fontSize": {
-        "value": "$font-size.s"
+        "value": "{font-size.s}"
       },
       "letterSpacing": {
         "value": "0"
@@ -367,16 +367,16 @@
     },
     "secondary-text": {
       "fontFamily": {
-        "value": "$font-family"
+        "value": "{font-family}"
       },
       "fontWeight": {
-        "value": "$font-weight.regular"
+        "value": "{font-weight.regular}"
       },
       "lineHeight": {
-        "value": "$line-height.interface"
+        "value": "{line-height.interface}"
       },
       "fontSize": {
-        "value": "$font-size.xs"
+        "value": "{font-size.xs}"
       },
       "letterSpacing": {
         "value": "0"
@@ -395,16 +395,16 @@
   "input": {
     "label": {
       "fontFamily": {
-        "value": "$font-family"
+        "value": "{font-family}"
       },
       "fontWeight": {
-        "value": "$font-weight.medium"
+        "value": "{font-weight.medium}"
       },
       "lineHeight": {
-        "value": "$line-height.interface"
+        "value": "{line-height.interface}"
       },
       "fontSize": {
-        "value": "$font-size.s"
+        "value": "{font-size.s}"
       },
       "letterSpacing": {
         "value": "0"
@@ -421,16 +421,16 @@
     },
     "text": {
       "fontFamily": {
-        "value": "$font-family"
+        "value": "{font-family}"
       },
       "fontWeight": {
-        "value": "$font-weight.regular"
+        "value": "{font-weight.regular}"
       },
       "lineHeight": {
-        "value": "$line-height.interface"
+        "value": "{line-height.interface}"
       },
       "fontSize": {
-        "value": "$font-size.s"
+        "value": "{font-size.s}"
       },
       "letterSpacing": {
         "value": "0"
@@ -447,16 +447,16 @@
     },
     "error|subscription": {
       "fontFamily": {
-        "value": "$font-family"
+        "value": "{font-family}"
       },
       "fontWeight": {
-        "value": "$font-weight.regular"
+        "value": "{font-weight.regular}"
       },
       "lineHeight": {
-        "value": "$line-height.interface"
+        "value": "{line-height.interface}"
       },
       "fontSize": {
-        "value": "$font-size.xs"
+        "value": "{font-size.xs}"
       },
       "letterSpacing": {
         "value": "0"
@@ -475,16 +475,16 @@
   "button": {
     "S_text": {
       "fontFamily": {
-        "value": "$font-family"
+        "value": "{font-family}"
       },
       "fontWeight": {
-        "value": "$font-weight.regular"
+        "value": "{font-weight.regular}"
       },
       "lineHeight": {
-        "value": "$line-height.interface"
+        "value": "{line-height.interface}"
       },
       "fontSize": {
-        "value": "$font-size.s"
+        "value": "{font-size.s}"
       },
       "letterSpacing": {
         "value": "0"
@@ -501,16 +501,16 @@
     },
     "XS_text": {
       "fontFamily": {
-        "value": "$font-family"
+        "value": "{font-family}"
       },
       "fontWeight": {
-        "value": "$font-weight.regular"
+        "value": "{font-weight.regular}"
       },
       "lineHeight": {
-        "value": "$line-height.interface"
+        "value": "{line-height.interface}"
       },
       "fontSize": {
-        "value": "$font-size.xs"
+        "value": "{font-size.xs}"
       },
       "letterSpacing": {
         "value": "0"
