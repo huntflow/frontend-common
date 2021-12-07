@@ -1,4 +1,4 @@
-import BaseButton from './button.vue';
+import BaseButton from './base-button.vue';
 
 export default {
   title: 'Example/Button',
@@ -37,7 +37,7 @@ const Template = (args, { argTypes }) => ({
     return args;
   },
   template: `
-  <base-button v-bind="$attrs" v-bind="$data" v-on="$listeners">{{ label }}</base-button>
+  <base-button v-bind="$data" v-on="$listeners">{{ label }}</base-button>
   `,
 });
 

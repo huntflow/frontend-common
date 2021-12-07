@@ -9,7 +9,7 @@
       "type": "color"
     },
     "bg-btn-weak": {
-      "value": "$base-palette.white",
+      "value": "$default-palette.0",
       "type": "color"
     },
     "bg-strong": {
@@ -28,40 +28,36 @@
       "value": "$default-palette.300",
       "type": "color"
     },
-    "text-disabled": {
-      "value": "$default-palette.100",
-      "type": "color"
-    },
     "text-btn": {
       "value": "$default-palette.0",
       "type": "color"
     },
     "border-btn": {
-      "value": "$default-palette.100",
+      "value": "$default-palette.400",
       "type": "color"
     },
     "border-btn-hover": {
-      "value": "$default-palette.400",
+      "value": "$default-palette.500",
       "type": "color"
     },
-    "border-btn-weak": {
+    "divider": {
       "value": "$default-palette.100",
       "type": "color"
     },
-    "border-btn-weak-hover": {
-      "value": "$default-palette.400",
-      "type": "color"
-    },
-    "default-divider": {
-      "value": "$default-palette.200",
-      "type": "color"
-    },
     "bg": {
-      "value": "$base-palette.white",
+      "value": "$default-palette.0",
       "type": "color"
     },
     "icon": {
       "value": "$default-palette.900",
+      "type": "color"
+    },
+    "bg-btn-hover": {
+      "value": "$default-palette.500",
+      "type": "color"
+    },
+    "bg-btn-disabled": {
+      "value": "$default-palette.100",
       "type": "color"
     }
   }

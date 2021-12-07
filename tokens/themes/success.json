@@ -1,31 +1,51 @@
 {
   "success": {
-    "color-text": {
+    "bg-btn": {
       "value": "$success-palette.500",
       "type": "color"
     },
-    "color-bg": {
-      "value": "$success-palette.100",
+    "bg-btn-disabled": {
+      "value": "$success-palette.200",
       "type": "color"
     },
-    "color-cta": {
-      "value": "$success-palette.500",
-      "type": "color"
-    },
-    "color-cta-hover": {
+    "bg-btn-hover": {
       "value": "$success-palette.600",
       "type": "color"
     },
-    "color-cta_disabled": {
+    "bg-weak": {
       "value": "$success-palette.100",
       "type": "color"
     },
-    "color-icon": {
+    "bg": {
       "value": "$success-palette.500",
       "type": "color"
     },
-    "border-active": {
+    "text": {
       "value": "$success-palette.500",
+      "type": "color"
+    },
+    "text-hover": {
+      "value": "$success-palette.600",
+      "type": "color"
+    },
+    "text-disabled": {
+      "value": "$success-palette.200",
+      "type": "color"
+    },
+    "icon": {
+      "value": "$success-palette.500",
+      "type": "color"
+    },
+    "border-btn": {
+      "value": "$success-palette.500",
+      "type": "color"
+    },
+    "border-btn-hover": {
+      "value": "$success-palette.600",
+      "type": "color"
+    },
+    "txt-btn": {
+      "value": "$success-palette.0",
       "type": "color"
     }
   }

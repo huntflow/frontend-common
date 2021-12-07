@@ -1,7 +1,7 @@
 {
   "default-palette": {
     "0": {
-      "value": "#FFF",
+      "value": "#fffffff",
       "type": "color"
     },
     "50": {
@@ -46,6 +46,10 @@
     }
   },
   "accent-palette": {
+    "0": {
+      "value": "#ffffff",
+      "type": "color"
+    },
     "50": {
       "value": "#EFFCFD",
       "type": "color"
@@ -93,6 +97,10 @@
     "type": "fontFamilies"
   },
   "success-palette": {
+    "0": {
+      "value": "##ffffff",
+      "type": "color"
+    },
     "50": {
       "value": "#E7F9F0",
       "type": "color"
@@ -527,10 +535,6 @@
       "value": "48",
       "type": "spacing"
     },
-    "ml": {
-      "value": "40",
-      "type": "spacing"
-    },
     "m": {
       "value": "32",
       "type": "spacing"
@@ -554,6 +558,10 @@
     "no": {
       "value": "0",
       "type": "spacing"
+    },
+    "ml": {
+      "value": "40",
+      "type": "spacing"
     }
   },
   "input-height": {
@@ -575,6 +583,10 @@
     "type": "spacing"
   },
   "error-palette": {
+    "0": {
+      "value": "#ffffff",
+      "type": "color"
+    },
     "50": {
       "value": "#F9E6EA",
       "type": "color"
@@ -613,12 +625,6 @@
     },
     "900": {
       "value": "#270209",
-      "type": "color"
-    }
-  },
-  "base-palette": {
-    "white": {
-      "value": "#ffffff",
       "type": "color"
     }
   },
@@ -670,6 +676,56 @@
         "color": "#DFE0E3"
       },
       "type": "boxShadow"
+    }
+  },
+  "xs": {
+    "value": "1",
+    "type": "borderWidth"
+  },
+  "warning-palette": {
+    "0": {
+      "value": "#FFffff",
+      "type": "color"
+    },
+    "50": {
+      "value": "#FFE2B4",
+      "type": "color"
+    },
+    "100": {
+      "value": "#FFD797",
+      "type": "color"
+    },
+    "200": {
+      "value": "#FFCC78",
+      "type": "color"
+    },
+    "300": {
+      "value": "#FFC25F",
+      "type": "color"
+    },
+    "400": {
+      "value": "#FFB338",
+      "type": "color"
+    },
+    "500": {
+      "value": "#FF9E00",
+      "type": "color"
+    },
+    "600": {
+      "value": "#E5920B",
+      "type": "color"
+    },
+    "700": {
+      "value": "#CB8719",
+      "type": "color"
+    },
+    "800": {
+      "value": "#AA6A02",
+      "type": "color"
+    },
+    "900": {
+      "value": "#7D5616",
+      "type": "color"
     }
   }
 }
