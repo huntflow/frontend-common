@@ -177,7 +177,7 @@ export default {
   border-color: var(--errorBorderBtnWeakHover);
 }
 .t-error.p-weak:disabled {
-  color: var(--errorBorderBtnWeakDisabled); /* ToDo: взять токен, когда будет */
+  color: var(--errorTextBtnWeakDisabled);
   border-color: var(--errorBorderBtnWeakDisabled);
 }
 .t-error.p-weak:focus-visible {}

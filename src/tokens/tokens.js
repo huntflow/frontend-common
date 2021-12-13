@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 13 Dec 2021 08:00:49 GMT
+ * Generated on Mon, 13 Dec 2021 11:09:54 GMT
  */
 
 export const accentBgBtnMain = "#1DA1B5";
@@ -56,6 +56,7 @@ export const errorTextBtnWeakHover = "#9A0823";
 export const errorTextWeakDisabled = "#F3CED5";
 export const errorTextBtnThin = "#8892A2";
 export const errorTxtBtnThinHover = "#ffffff";
+export const errorTextBtnWeakDisabled = "#E69DAB";
 export const defaultPalette0 = "#ffffff";
 export const defaultPalette50 = "#fafcfc";
 export const defaultPalette100 = "#e4e8ee";

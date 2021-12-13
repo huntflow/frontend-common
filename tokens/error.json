@@ -71,6 +71,10 @@
     "txt-btn-thin-hover": {
       "value": "$error-palette.0",
       "type": "color"
+    },
+    "text-btn-weak-disabled": {
+      "value": "$error-palette.200",
+      "type": "color"
     }
   }
 }
