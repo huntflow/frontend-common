@@ -6,7 +6,7 @@
 
 <script>
 const AVAILABLE_THEMES = ['default', 'accent', 'success', 'error', 'warning'];
-const AVAILABLE_PROMINENCE = ['primary', 'secondary', 'weak'];
+const AVAILABLE_PROMINENCE = ['main', 'weak', 'thin'];
 
 export default {
   name: 'HFBaseButton',
@@ -23,9 +23,8 @@ export default {
       },
     },
     prominence: {
-      // todo: придумать с дизами нормальное слово
       type: String,
-      default: 'weak',
+      default: 'main',
       validator(value) {
         return AVAILABLE_PROMINENCE.includes(value);
       },
@@ -55,6 +54,10 @@ export default {
   border-style: solid;
 }
 
+.button:disabled {
+  cursor: default;
+}
+
 .size-xs {
   font-size: var(--buttonXsTextFontSize);
   font-weight: var(--buttonXsTextFontWeight);
@@ -73,66 +76,161 @@ export default {
   border-radius: var(--radiusXs);
 }
 
+/* default theme */
 .t-default {
-  border-color: var(--defaultBorderBtn);
-  background-color: var(--defaultBgBtn);
-  color: var(--defaultTextBtn);
+  border-color: var(--defaultBgBtnMain);
+  background-color: var(--defaultBgBtnMain);
+  color: var(--defaultTextBtnMain);
 }
 .t-default:hover {
-  border-color: var(--defaultBorderBtnHover);
-  background-color: var(--defaultBgBtnHover);
-  color: var(--defaultTextBtnHover);
+  border-color: var(--defaultBgBtnMainHover);
+  background-color: var(--defaultBgBtnMainHover);
 }
 .t-default:disabled {
-  border-color: var(--defaultBorderBtnDisabled);
-  background-color: var(--defaultBgBtnDisabled);
-  color: var(--defaultTextBtnDisabled);
+  border-color: var(--defaultBgBtnMainDisabled);
+  background-color: var(--defaultBgBtnMainDisabled);
 }
-.t-default:focus {
-  border-color: var(--defaultBorderBtnActive);
-  background-color: var(--defaultBgBtnActive);
-  color: var(--defaultTextBtnActive);
-}
+.t-default:focus-visible {}
 
 .t-default.p-weak {
   border-color: var(--defaultBorderBtnWeak);
-  background-color: var(--defaultBgBtnWeak);
   color: var(--defaultTextBtnWeak);
 }
 .t-default.p-weak:hover {
   border-color: var(--defaultBorderBtnWeakHover);
-  background-color: var(--defaultBgBtnWeakHover);
-  color: var(--defaultTextBtnWeakHover);
 }
 .t-default.p-weak:disabled {
-  border-color: var(--defaultBorderBtnWeakDisabled);
-  background-color: var(--defaultBgBtnWeakDisabled);
   color: var(--defaultTextBtnWeakDisabled);
+  border-color: var(--defaultBorderBtnWeakDisabled);
 }
-.t-default.p-weak:focus {
-  border-color: var(--defaultBorderBtnWeakActive);
-  background-color: var(--defaultBgBtnWeakActive);
-  color: var(--defaultTextBtnWeakActive);
-}
+.t-default.p-weak:focus-visible {}
 
+.t-default.p-thin {
+  color: var(--defaultTextBtnThin);
+  background: none;
+  border-color: transparent;
+}
+.t-default.p-thin:hover {
+  color: var(--defaultTextBtnThinHover);
+  background: none;
+  border-color: transparent;
+}
+.t-default.p-thin:disabled {
+  background: none;
+  border-color: transparent;
+}
+.t-default.p-thin:focus-visible {}
+
+/* accent theme */
 .t-accent {
-  border-color: var(--accentBorderBtn);
-  background-color: var(--accentBgBtn);
-  color: var(--accentTextBtn);
+  border-color: var(--accentBgBtnMain);
+  background-color: var(--accentBgBtnMain);
+  color: var(--accentTextBtnMain);
 }
 .t-accent:hover {
-  border-color: var(--accentBorderBtnHover);
-  background-color: var(--accentBgBtnHover);
-  color: var(--accentTextBtnHover);
+  border-color: var(--accentBgBtnMainHover);
+  background-color: var(--accentBgBtnMainHover);
 }
 .t-accent:disabled {
-  border-color: var(--accentBorderBtnDisabled);
-  background-color: var(--accentBgBtnDisabled);
-  color: var(--accentTextBtnDisabled);
+  border-color: var(--accentBgBtnMainDisabled);
+  background-color: var(--accentBgBtnMainDisabled);
 }
-.t-accent:focus {
-  border-color: var(--accentBorderBtnActive);
-  background-color: var(--accentBgBtnActive);
-  color: var(--accentTextBtnActive);
+.t-accent:focus-visible {}
+
+.t-accent.p-weak {
+  border-color: var(--accentBorderBtnWeak);
+  color: var(--accentTextBtnWeak);
+}
+.t-accent.p-weak:hover {
+  color: var(--accentTextBtnWeakHover);
+  border-color: var(--accentBorderBtnWeakHover);
+}
+.t-accent.p-weak:disabled {
+  color: var(--accentTextBtnWeakDisabled);
+  border-color: var(--accentBorderBtnWeakDisabled);
+}
+.t-accent.p-weak:focus-visible {}
+
+
+/* error theme */
+.t-error {
+  border-color: var(--errorBgBtnMain);
+  background-color: var(--errorBgBtnMain);
+  color: var(--errorTxtBtnMain);
+}
+.t-error:hover {
+  border-color: var(--errorBgBtnMainHover);
+  background-color: var(--errorBgBtnMainHover);
+}
+.t-error:disabled {
+  border-color: var(--errorBgBtnMainDisabled);
+  background-color: var(--errorBgBtnMainDisabled);
+}
+.t-error:focus-visible {}
+
+.t-error.p-weak {
+  border-color: var(--errorBorderBtnWeak);
+  color: var(--errorTextBtnWeak);
+}
+.t-error.p-weak:hover {
+  color: var(--errorTextBtnWeakHover);
+  border-color: var(--errorBorderBtnWeakHover);
+}
+.t-error.p-weak:disabled {
+  color: var(--errorTextBtnWeakDisabled);
+  border-color: var(--errorBorderBtnWeakDisabled);
+}
+.t-error.p-weak:focus-visible {}
+
+.t-error.p-thin {
+  color: var(--errorTextBtnThin);
+  background: none;
+  border-color: transparent;
+}
+.t-error.p-thin:hover {
+  color: var(--errorTxtBtnThinHover);
+  background: var(--errorBgBtnThinHover);
+  border-color: transparent;
+}
+.t-error.p-thin:disabled {
+  background: none;
+  border-color: transparent;
+}
+.t-error.p-thin:focus-visible {}
+
+/* success theme */
+.t-success {
+  border-color: var(--successBgBtnMain);
+  background-color: var(--successBgBtnMain);
+  color: var(--successTxtBtnMain);
+}
+.t-success:hover {
+  border-color: var(--successBgBtnMainHover);
+  background-color: var(--successBgBtnMainHover);
+}
+.t-success:disabled {
+  border-color: var(--successBgBtnMainDisabled);
+  background-color: var(--successBgBtnMainDisabled);
+}
+.t-success:focus-visible {}
+
+.t-success.p-weak {
+  border-color: var(--successBorderBtnWeak);
+  color: var(--successTextBtnWeak);
+}
+.t-success.p-weak:hover {
+  color: var(--successTextBtnWeakHover);
+  border-color: var(--successBorderBtnWeakHover);
+}
+.t-success.p-weak:disabled {
+  color: var(--successBorderBtnWeakDisabled); /* ToDo: взять токен, когда будет */
+  border-color: var(--successBorderBtnWeakDisabled);
+}
+.t-success.p-weak:focus-visible {}
+
+.p-weak,
+.p-weak:disabled,
+.p-weak:hover {
+  background: none;
 }
 </style>

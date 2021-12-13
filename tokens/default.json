@@ -4,7 +4,7 @@
       "value": "$default-palette.700",
       "type": "color"
     },
-    "bg-btn": {
+    "bg-btn-main": {
       "value": "$default-palette.300",
       "type": "color"
     },
@@ -20,23 +20,23 @@
       "value": "$default-palette.900",
       "type": "color"
     },
-    "text-weak-hover": {
-      "value": "$default-palette.400",
+    "text-btn-thin-hover": {
+      "value": "$default-palette.700",
       "type": "color"
     },
     "text-weak": {
       "value": "$default-palette.300",
       "type": "color"
     },
-    "text-btn": {
+    "text-btn-main": {
       "value": "$default-palette.0",
       "type": "color"
     },
-    "border-btn": {
+    "border-btn-weak": {
       "value": "$default-palette.400",
       "type": "color"
     },
-    "border-btn-hover": {
+    "border-btn-weak-hover": {
       "value": "$default-palette.500",
       "type": "color"
     },
@@ -52,12 +52,28 @@
       "value": "$default-palette.900",
       "type": "color"
     },
-    "bg-btn-hover": {
+    "bg-btn-main-hover": {
       "value": "$default-palette.500",
       "type": "color"
     },
-    "bg-btn-disabled": {
+    "bg-btn-main-disabled": {
       "value": "$default-palette.100",
+      "type": "color"
+    },
+    "text-btn-weak-disabled": {
+      "value": "$default-palette.200",
+      "type": "color"
+    },
+    "border-btn-weak-disabled": {
+      "value": "$default-palette.100",
+      "type": "color"
+    },
+    "text-btn-thin": {
+      "value": "$default-palette.400",
+      "type": "color"
+    },
+    "text-btn-hover": {
+      "value": "$default-palette.900",
       "type": "color"
     }
   }

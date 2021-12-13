@@ -1,10 +1,10 @@
 {
   "accent": {
-    "bg-btn": {
+    "bg-btn-main": {
       "value": "$accent-palette.500",
       "type": "color"
     },
-    "bg-btn-disabled": {
+    "bg-btn-main-disabled": {
       "value": "$accent-palette.100",
       "type": "color"
     },
@@ -12,7 +12,7 @@
       "value": "$accent-palette.500",
       "type": "color"
     },
-    "bg-btn-hover": {
+    "bg-btn-main-hover": {
       "value": "$accent-palette.700",
       "type": "color"
     },
@@ -28,7 +28,7 @@
       "value": "$accent-palette.600",
       "type": "color"
     },
-    "text-disabled": {
+    "text-btn-weak-disabled": {
       "value": "$accent-palette.300",
       "type": "color"
     },
@@ -36,20 +36,32 @@
       "value": "$accent-palette.500",
       "type": "color"
     },
-    "border-btn": {
+    "border-btn-weak": {
       "value": "$accent-palette.500",
       "type": "color"
     },
-    "border-btn-hover": {
+    "border-btn-weak-hover": {
       "value": "$accent-palette.700",
       "type": "color"
     },
-    "border-btn-disabled": {
+    "border-btn-weak-disabled": {
       "value": "$accent-palette.200",
       "type": "color"
     },
-    "text-btn": {
+    "bg-btn-weak": {
       "value": "$accent-palette.0",
+      "type": "color"
+    },
+    "text-btn-weak": {
+      "value": "$accent-palette.500",
+      "type": "color"
+    },
+    "text-btn-main": {
+      "value": "$accent-palette.0",
+      "type": "color"
+    },
+    "text-btn-weak-hover": {
+      "value": "$accent-palette.700",
       "type": "color"
     }
   }
