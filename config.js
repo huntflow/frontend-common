@@ -4,6 +4,9 @@ function transformReferences(key, value) {
   if (typeof value === 'string' && value.startsWith('{') && value.endsWith('}')) {
     return `{${value.slice(1, value.length - 1)}.value}`;
   }
+  if (typeof value === 'string' && value.startsWith('$')) {
+    return `{${value.slice(1)}.value}`;
+  }
   return value;
 }
 

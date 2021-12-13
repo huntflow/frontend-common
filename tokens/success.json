@@ -1,0 +1,64 @@
+{
+  "success": {
+    "bg-btn-main": {
+      "value": "$success-palette.500",
+      "type": "color"
+    },
+    "bg-btn-main-disabled": {
+      "value": "$success-palette.200",
+      "type": "color"
+    },
+    "bg-btn-main-hover": {
+      "value": "$success-palette.600",
+      "type": "color"
+    },
+    "bg-weak": {
+      "value": "$success-palette.100",
+      "type": "color"
+    },
+    "bg": {
+      "value": "$success-palette.500",
+      "type": "color"
+    },
+    "text": {
+      "value": "$success-palette.500",
+      "type": "color"
+    },
+    "text-hover": {
+      "value": "$success-palette.600",
+      "type": "color"
+    },
+    "icon": {
+      "value": "$success-palette.500",
+      "type": "color"
+    },
+    "border-btn-weak": {
+      "value": "$success-palette.500",
+      "type": "color"
+    },
+    "border-btn-weak-hover": {
+      "value": "$success-palette.600",
+      "type": "color"
+    },
+    "txt-btn-main": {
+      "value": "$success-palette.0",
+      "type": "color"
+    },
+    "text-btn-weak": {
+      "value": "$success-palette.500",
+      "type": "color"
+    },
+    "text-btn-weak-hover": {
+      "value": "$success-palette.600",
+      "type": "color"
+    },
+    "text-btn-weak-disabled": {
+      "value": "$success-palette.200",
+      "type": "color"
+    },
+    "border-btn-weak-disabled": {
+      "value": "$success-palette.200",
+      "type": "color"
+    }
+  }
+}

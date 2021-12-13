@@ -1,7 +1,7 @@
 {
   "default-palette": {
     "0": {
-      "value": "#fffffff",
+      "value": "#ffffff",
       "type": "color"
     },
     "50": {
@@ -98,7 +98,7 @@
   },
   "success-palette": {
     "0": {
-      "value": "##ffffff",
+      "value": "#ffffff",
       "type": "color"
     },
     "50": {
@@ -211,13 +211,13 @@
   "header": {
     "Display": {
       "fontFamily": {
-        "value": "{font-family}"
+        "value": "$font-family"
       },
       "fontWeight": {
         "value": "{font-weight.medium}"
       },
       "lineHeight": {
-        "value": "{line-height.interface}"
+        "value": "$line-height.interface"
       },
       "fontSize": {
         "value": "{font-size.l}"
@@ -237,13 +237,13 @@
     },
     "H1": {
       "fontFamily": {
-        "value": "{font-family}"
+        "value": "$font-family"
       },
       "fontWeight": {
         "value": "{font-weight.medium}"
       },
       "lineHeight": {
-        "value": "{line-height.interface}"
+        "value": "$line-height.interface"
       },
       "fontSize": {
         "value": "{font-size.lm}"
@@ -263,13 +263,13 @@
     },
     "H2": {
       "fontFamily": {
-        "value": "{font-family}"
+        "value": "$font-family"
       },
       "fontWeight": {
         "value": "{font-weight.medium}"
       },
       "lineHeight": {
-        "value": "{line-height.interface}"
+        "value": "$line-height.interface"
       },
       "fontSize": {
         "value": "{font-size.m}"
@@ -289,13 +289,13 @@
     },
     "H3": {
       "fontFamily": {
-        "value": "{font-family}"
+        "value": "$font-family"
       },
       "fontWeight": {
         "value": "{font-weight.medium}"
       },
       "lineHeight": {
-        "value": "{line-height.interface}"
+        "value": "$line-height.interface"
       },
       "fontSize": {
         "value": "{font-size.ms}"
@@ -315,13 +315,13 @@
     },
     "H4": {
       "fontFamily": {
-        "value": "{font-family}"
+        "value": "$font-family"
       },
       "fontWeight": {
         "value": "{font-weight.medium}"
       },
       "lineHeight": {
-        "value": "{line-height.interface}"
+        "value": "$line-height.interface"
       },
       "fontSize": {
         "value": "{font-size.xxs}"
@@ -341,13 +341,13 @@
     },
     "base-text": {
       "fontFamily": {
-        "value": "{font-family}"
+        "value": "$font-family"
       },
       "fontWeight": {
         "value": "{font-weight.regular}"
       },
       "lineHeight": {
-        "value": "{line-height.interface}"
+        "value": "$line-height.interface"
       },
       "fontSize": {
         "value": "{font-size.s}"
@@ -367,13 +367,13 @@
     },
     "secondary-text": {
       "fontFamily": {
-        "value": "{font-family}"
+        "value": "$font-family"
       },
       "fontWeight": {
         "value": "{font-weight.regular}"
       },
       "lineHeight": {
-        "value": "{line-height.interface}"
+        "value": "$line-height.interface"
       },
       "fontSize": {
         "value": "{font-size.xs}"
@@ -395,13 +395,13 @@
   "input": {
     "label": {
       "fontFamily": {
-        "value": "{font-family}"
+        "value": "$font-family"
       },
       "fontWeight": {
         "value": "{font-weight.medium}"
       },
       "lineHeight": {
-        "value": "{line-height.interface}"
+        "value": "$line-height.interface"
       },
       "fontSize": {
         "value": "{font-size.s}"
@@ -421,13 +421,13 @@
     },
     "text": {
       "fontFamily": {
-        "value": "{font-family}"
+        "value": "$font-family"
       },
       "fontWeight": {
         "value": "{font-weight.regular}"
       },
       "lineHeight": {
-        "value": "{line-height.interface}"
+        "value": "$line-height.interface"
       },
       "fontSize": {
         "value": "{font-size.s}"
@@ -447,13 +447,13 @@
     },
     "error|subscription": {
       "fontFamily": {
-        "value": "{font-family}"
+        "value": "$font-family"
       },
       "fontWeight": {
         "value": "{font-weight.regular}"
       },
       "lineHeight": {
-        "value": "{line-height.interface}"
+        "value": "$line-height.interface"
       },
       "fontSize": {
         "value": "{font-size.xs}"
@@ -475,13 +475,13 @@
   "button": {
     "S_text": {
       "fontFamily": {
-        "value": "{font-family}"
+        "value": "$font-family"
       },
       "fontWeight": {
         "value": "{font-weight.regular}"
       },
       "lineHeight": {
-        "value": "{line-height.interface}"
+        "value": "$line-height.interface"
       },
       "fontSize": {
         "value": "{font-size.s}"
@@ -501,13 +501,13 @@
     },
     "XS_text": {
       "fontFamily": {
-        "value": "{font-family}"
+        "value": "$font-family"
       },
       "fontWeight": {
         "value": "{font-weight.regular}"
       },
       "lineHeight": {
-        "value": "{line-height.interface}"
+        "value": "$line-height.interface"
       },
       "fontSize": {
         "value": "{font-size.xs}"

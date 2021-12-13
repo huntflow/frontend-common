@@ -20,8 +20,9 @@ export default {
     prominence: {
       control: { type: 'select' },
       options: [
-        'primary',
-        'weak'
+        'main',
+        'weak',
+        'thin'
       ],
     },
     disabled: {
@@ -45,7 +46,7 @@ export const Default = Template.bind({});
 Default.args = {
   label: 'Button',
   size: 's',
-  theme: 'default',
-  prominence: 'primary',
+  theme: 'accent',
+  prominence: 'main',
   disabled: false
 };
