@@ -39,11 +39,28 @@ const Template = (args, { argTypes }) => ({
     return args;
   },
   template: `
+  <div>
   <form-field v-bind="$data" v-on="$listeners">
     <template #default="{ id }">
       <base-input :id="id" />
     </template>
   </form-field>
+  <form-field v-bind="$data" v-on="$listeners">
+    <template #default="{ id }">
+      <base-input :id="id" />
+    </template>
+  </form-field>
+  <form-field v-bind="$data" v-on="$listeners">
+    <template #default="{ id }">
+      <base-input :id="id" />
+    </template>
+  </form-field>
+  <form-field v-bind="$data" v-on="$listeners">
+    <template #default="{ id }">
+      <base-input :id="id" />
+    </template>
+  </form-field>
+  </div>
   `,
 });
 
