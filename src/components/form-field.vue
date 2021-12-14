@@ -1,29 +1,40 @@
 <template>
   <div :class="className">
-    <template v-if="label">
-      <base-label :for="id">{{ label }}</base-label>
-      <base-space size="xxs" />
-    </template>
+    <form-label v-if="label" :for="id" :description="description">{{ label }}</form-label>
     <slot :id="id" />
+    <form-error v-if="error" :class="$style.error">{{ error }}</form-error>
+    <div v-else-if="hint" :class="$style.hint">{{ hint }}</div>
   </div>
 </template>
 
 <script>
 import { nanoid } from 'nanoid';
-import BaseLabel from './base-label.vue';
-import BaseSpace from './base-space.vue';
+import FormLabel from './form-label.vue';
+import FormError from './form-error.vue';
 
 export default {
   name: 'HuntKitFormField',
   components: {
-    BaseLabel,
-    BaseSpace
+    FormLabel,
+    FormError
   },
   props: {
     label: {
       type: String,
       default: null
-    }
+    },
+    description: {
+      type: String,
+      default: null
+    },
+    hint: {
+      type: String,
+      default: null
+    },
+    error: {
+      type: String,
+      default: null
+    },
   },
   data() {
     return {
@@ -48,5 +59,17 @@ export default {
 
 .field + .labeled {
   margin-top: var(--spaceSm);
+}
+
+.hint {
+  all: unset;
+
+  display: block;
+
+  font-size: var(--fontSizeS);
+  font-family: var(--fontFamily);
+  line-height: var(--lineHeightInterface);
+
+  color: var(--inputTextHint);
 }
 </style>

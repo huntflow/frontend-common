@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.spacer" :style="style" />
+  <div :class="vertical ? $style.verticalSpacer : $style.horizontalSpacer" :style="style" />
 </template>
 
 <script>
@@ -12,7 +12,8 @@ export default {
     size: {
       type: String,
       required: true
-    }
+    },
+    vertical: Boolean
   },
   computed: {
     style() {
@@ -25,8 +26,11 @@ export default {
 </script>
 
 <style module>
-.spacer {
-  width: var(--size);
+.horizontalSpacer {
   height: var(--size);
+}
+
+.verticalSpacer {
+  width: var(--size);
 }
 </style>

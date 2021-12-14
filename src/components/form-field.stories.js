@@ -66,5 +66,6 @@ const Template = (args, { argTypes }) => ({
 
 export const Default = Template.bind({});
 Default.args = {
-  label: 'Label'
+  label: 'Label',
+  description: '',
 };
