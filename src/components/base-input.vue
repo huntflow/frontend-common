@@ -16,8 +16,8 @@ export default {
       default: 's'
     },
     invalid: {
-      type: String,
-      default: 's'
+      type: Boolean,
+      default: false
     },
   },
   computed: {
@@ -44,6 +44,11 @@ export default {
 <style module>
 .input {
   all: unset;
+
+  font-size: var(--inputTextFontSize);
+  line-height: var(--inputTextLineHeight);
+  font-weight: var(--inputTextFontWeight);
+  font-family: var(--inputTextFontFamily);
 
   box-sizing: border-box;
   display: block;
@@ -72,19 +77,11 @@ export default {
 }
 
 .size-s {
-  font-size: var(--buttonSTextFontSize);
-  line-height: var(--buttonSTextLineHeight);
-  font-weight: var(--buttonSTextFontWeight);
-  font-family: var(--buttonSTextFontFamily);
   height: var(--inputHeightS);
   padding: 0 var(--spaceXs);
 }
 
 .size-xs {
-  font-size: var(--buttonXsTextFontSize);
-  line-height: var(--buttonXsTextLineHeight);
-  font-weight: var(--buttonXsTextFontWeight);
-  font-family: var(--buttonXsTextFontFamily);
   height: var(--inputHeightXs);
   padding: 0 var(--spaceXxs);
 }
