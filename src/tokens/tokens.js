@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 13 Dec 2021 11:09:54 GMT
+ * Generated on Tue, 14 Dec 2021 08:24:21 GMT
  */
 
 export const accentBgBtnMain = "#1DA1B5";
@@ -170,14 +170,7 @@ export const inputLabelLetterSpacing = "0";
 export const inputLabelParagraphSpacing = "0";
 export const inputLabelTextDecoration = "0";
 export const inputLabelTextCase = "0";
-export const inputTextFontFamily = "\"hunt-kit-graphik\"";
-export const inputTextFontWeight = "400";
-export const inputTextLineHeight = "110%";
-export const inputTextFontSize = "16px";
-export const inputTextLetterSpacing = "0";
-export const inputTextParagraphSpacing = "0";
-export const inputTextTextDecoration = "0";
-export const inputTextTextCase = "0";
+export const inputText = "#3c4055";
 export const inputErrorSubscriptionFontFamily = "\"hunt-kit-graphik\"";
 export const inputErrorSubscriptionFontWeight = "400";
 export const inputErrorSubscriptionLineHeight = "110%";
@@ -186,6 +179,14 @@ export const inputErrorSubscriptionLetterSpacing = "0";
 export const inputErrorSubscriptionParagraphSpacing = "0";
 export const inputErrorSubscriptionTextDecoration = "0";
 export const inputErrorSubscriptionTextCase = "0";
+export const inputBg = "#fafcfc";
+export const inputBorder = "#e4e8ee";
+export const inputTextPlaceholder = "#8892A2";
+export const inputTextDisabled = "#c1c9d0";
+export const inputBorderFocus = "#1DA1B5";
+export const inputBorderError = "#C10A2C";
+export const inputTextError = "#C10A2C";
+export const inputTextHint = "#8892A2";
 export const buttonSTextFontFamily = "\"hunt-kit-graphik\"";
 export const buttonSTextFontWeight = "400";
 export const buttonSTextLineHeight = "110%";
