@@ -1,18 +1,43 @@
 <template>
   <base-dropdown>
-    <template #default="{ onToggle }">
-      <button :class="className" v-on="listeners" @click="onToggle">
-        <template v-if="displayValue">
-          {{ displayValue }}
-        </template>
-        <template v-else>
-          <span :class="$style.placeholder">{{ placeholder }}</span>
-        </template>
+    <template #default="{ onToggle, show }">
+      <button
+        :class="[
+          className,
+          {
+            [$style.open]: show,
+          },
+        ]"
+        :disabled="disabled"
+        @click="onToggle"
+      >
+        <span :class="displayValue ? $style.value : $style.placeholder">
+          {{ displayValue || placeholder }}
+        </span>
+
+        <svg
+          width="8"
+          height="6"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          :class="$style.icon"
+        >
+          <path
+            d="M6.86496 0H1.13504C.287204 0-.175954.988856.366819 1.64018L3.23178 5.07813c.39979.47976 1.13665.47976 1.53644.00001l2.86496-3.43796C8.17595.988857 7.7128 0 6.86496 0Z"
+          />
+        </svg>
       </button>
     </template>
     <template #menu="{ onToggle }">
       <ul>
-        <li v-for="item in items" :key="item.id" @click="handleSelect(item); onToggle();">
+        <li
+          v-for="item in items"
+          :key="item.id"
+          @click="
+            handleSelect(item);
+            onToggle();
+          "
+        >
           {{ item.name }}
         </li>
       </ul>
@@ -28,32 +53,33 @@ export default {
   name: 'HuntKitSelect',
   model: {
     prop: 'value',
-    event: 'input'
+    event: 'input',
   },
   components: {
-    BaseDropdown
+    BaseDropdown,
   },
   props: {
     size: {
       type: String,
-      default: 's'
+      default: 's',
     },
     invalid: {
       type: Boolean,
-      default: false
+      default: false,
     },
     items: {
       type: Array,
-      required: true
+      required: true,
     },
     value: {
       type: [Number, String],
-      default: null
+      default: null,
     },
     placeholder: {
       type: String,
-      default: null
-    }
+      default: null,
+    },
+    disabled: Boolean,
   },
   computed: {
     displayValue() {
@@ -72,19 +98,36 @@ export default {
     },
     listeners() {
       return {
-        ...this.$listeners
+        ...this.$listeners,
       };
-    }
+    },
   },
   methods: {
     handleSelect(item) {
       this.$emit('input', item.id);
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style module>
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.icon path {
+  fill: var(--defaultIcon);
+}
+
+.value {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .selectButton {
   all: unset;
 
@@ -93,9 +136,10 @@ export default {
   font-weight: var(--inputTextFontWeight);
   font-family: var(--inputTextFontFamily);
 
-  box-sizing: border-box;
-  display: block;
   width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
 
   border: 1px solid var(--inputColorBorder);
   border-radius: var(--radiusXs);
@@ -107,7 +151,8 @@ export default {
   border-color: var(--inputColorBorderError);
 }
 
-.selectButton:focus-visible {
+.selectButton:focus-visible,
+.open {
   border-color: var(--inputColorBorderFocus);
 }
 
@@ -117,16 +162,26 @@ export default {
 }
 
 .placeholder {
+  composes: value;
+  cursor: default;
   color: var(--inputColorTextPlaceholder);
 }
 
 .size-s {
   height: var(--inputHeightS);
-  padding: 0 var(--spaceXs);
+  padding: 0 calc(var(--spaceS) + 20px) 0 var(--spaceXs);
+}
+
+.size-s .icon {
+  right: var(--spaceS);
 }
 
 .size-xs {
   height: var(--inputHeightXs);
-  padding: 0 var(--spaceXxs);
+  padding: 0 calc(var(--spaceXs) + 20px) 0 var(--spaceXxs);
+}
+
+.size-xs .icon {
+  right: var(--spaceXs);
 }
 </style>
