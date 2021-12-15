@@ -54,26 +54,27 @@ export default {
   display: block;
   width: 100%;
 
-  border: 1px solid var(--inputBorder);
+  border: 1px solid var(--inputColorBorder);
   border-radius: var(--radiusXs);
-  background-color: var(--inputBg);
+  background-color: var(--inputColorBg);
+  color: var(--inputColorText);
 }
 
 .invalid {
-  border-color: var(--inputBorderError);
+  border-color: var(--inputColorBorderError);
 }
 
 .input:focus {
-  border-color: var(--inputBorderFocus);
+  border-color: var(--inputColorBorderFocus);
 }
 
 .input:disabled {
-  color: var(--inputTextDisabled);
-  border-color: var(--inputBorder);
+  color: var(--inputColorTextDisabled);
+  border-color: var(--inputColorBorder);
 }
 
 .input::placeholder {
-  color: var(--inputTextPlaceholder);
+  color: var(--inputColorTextPlaceholder);
 }
 
 .size-s {

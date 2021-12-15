@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 14 Dec 2021 08:24:21 GMT
+ * Generated on Wed, 15 Dec 2021 12:40:30 GMT
  */
 
 :root {
@@ -60,6 +60,10 @@
   --inputErrorSubscriptionTextDecoration: 0;
   --inputErrorSubscriptionParagraphSpacing: 0;
   --inputErrorSubscriptionLetterSpacing: 0;
+  --inputTextTextCase: 0;
+  --inputTextTextDecoration: 0;
+  --inputTextParagraphSpacing: 0;
+  --inputTextLetterSpacing: 0;
   --inputLabelTextCase: 0;
   --inputLabelTextDecoration: 0;
   --inputLabelParagraphSpacing: 0;
@@ -155,6 +159,15 @@
   --successBgBtnMainHover: var(--successPalette600);
   --successBgBtnMainDisabled: var(--successPalette200);
   --successBgBtnMain: var(--successPalette500);
+  --inputColorTextHint: var(--defaultPalette400);
+  --inputColorTextError: var(--errorPalette500);
+  --inputColorBorderError: var(--errorPalette500);
+  --inputColorBorderFocus: var(--accentPalette500);
+  --inputColorTextDisabled: var(--defaultPalette200);
+  --inputColorTextPlaceholder: var(--defaultPalette400);
+  --inputColorText: var(--defaultPalette700);
+  --inputColorBorder: var(--defaultPalette100);
+  --inputColorBg: var(--defaultPalette50);
   --buttonXsTextFontSize: var(--fontSizeXs);
   --buttonXsTextLineHeight: var(--lineHeightInterface);
   --buttonXsTextFontWeight: var(--fontWeightRegular);
@@ -163,19 +176,14 @@
   --buttonSTextLineHeight: var(--lineHeightInterface);
   --buttonSTextFontWeight: var(--fontWeightRegular);
   --buttonSTextFontFamily: var(--fontFamily);
-  --inputTextHint: var(--defaultPalette400);
-  --inputTextError: var(--errorPalette500);
-  --inputBorderError: var(--errorPalette500);
-  --inputBorderFocus: var(--accentPalette500);
-  --inputTextDisabled: var(--defaultPalette200);
-  --inputTextPlaceholder: var(--defaultPalette400);
-  --inputBorder: var(--defaultPalette100);
-  --inputBg: var(--defaultPalette50);
   --inputErrorSubscriptionFontSize: var(--fontSizeXs);
   --inputErrorSubscriptionLineHeight: var(--lineHeightInterface);
   --inputErrorSubscriptionFontWeight: var(--fontWeightRegular);
   --inputErrorSubscriptionFontFamily: var(--fontFamily);
-  --inputText: var(--defaultPalette700);
+  --inputTextFontSize: var(--fontSizeS);
+  --inputTextLineHeight: var(--lineHeightInterface);
+  --inputTextFontWeight: var(--fontWeightRegular);
+  --inputTextFontFamily: var(--fontFamily);
   --inputLabelFontSize: var(--fontSizeS);
   --inputLabelLineHeight: var(--lineHeightInterface);
   --inputLabelFontWeight: var(--fontWeightMedium);

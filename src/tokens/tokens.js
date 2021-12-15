@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 14 Dec 2021 08:24:21 GMT
+ * Generated on Wed, 15 Dec 2021 12:40:30 GMT
  */
 
 export const accentBgBtnMain = "#1DA1B5";
@@ -170,7 +170,14 @@ export const inputLabelLetterSpacing = "0";
 export const inputLabelParagraphSpacing = "0";
 export const inputLabelTextDecoration = "0";
 export const inputLabelTextCase = "0";
-export const inputText = "#3c4055";
+export const inputTextFontFamily = "\"hunt-kit-graphik\"";
+export const inputTextFontWeight = "400";
+export const inputTextLineHeight = "110%";
+export const inputTextFontSize = "16px";
+export const inputTextLetterSpacing = "0";
+export const inputTextParagraphSpacing = "0";
+export const inputTextTextDecoration = "0";
+export const inputTextTextCase = "0";
 export const inputErrorSubscriptionFontFamily = "\"hunt-kit-graphik\"";
 export const inputErrorSubscriptionFontWeight = "400";
 export const inputErrorSubscriptionLineHeight = "110%";
@@ -179,14 +186,6 @@ export const inputErrorSubscriptionLetterSpacing = "0";
 export const inputErrorSubscriptionParagraphSpacing = "0";
 export const inputErrorSubscriptionTextDecoration = "0";
 export const inputErrorSubscriptionTextCase = "0";
-export const inputBg = "#fafcfc";
-export const inputBorder = "#e4e8ee";
-export const inputTextPlaceholder = "#8892A2";
-export const inputTextDisabled = "#c1c9d0";
-export const inputBorderFocus = "#1DA1B5";
-export const inputBorderError = "#C10A2C";
-export const inputTextError = "#C10A2C";
-export const inputTextHint = "#8892A2";
 export const buttonSTextFontFamily = "\"hunt-kit-graphik\"";
 export const buttonSTextFontWeight = "400";
 export const buttonSTextLineHeight = "110%";
@@ -247,6 +246,15 @@ export const warningPalette600 = "#E5920B";
 export const warningPalette700 = "#CB8719";
 export const warningPalette800 = "#AA6A02";
 export const warningPalette900 = "#7D5616";
+export const inputColorBg = "#fafcfc";
+export const inputColorBorder = "#e4e8ee";
+export const inputColorText = "#3c4055";
+export const inputColorTextPlaceholder = "#8892A2";
+export const inputColorTextDisabled = "#c1c9d0";
+export const inputColorBorderFocus = "#1DA1B5";
+export const inputColorBorderError = "#C10A2C";
+export const inputColorTextError = "#C10A2C";
+export const inputColorTextHint = "#8892A2";
 export const successBgBtnMain = "#0A9B53";
 export const successBgBtnMainDisabled = "#6EDAA4";
 export const successBgBtnMainHover = "#087C42";

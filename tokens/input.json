@@ -1,5 +1,5 @@
 {
-  "input": {
+  "input-color": {
     "bg": {
       "value": "$default-palette.50",
       "type": "color"
