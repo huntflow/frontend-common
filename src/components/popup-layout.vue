@@ -53,7 +53,9 @@ export default {
 }
 
 .root {
+  margin: 0 auto;
   box-shadow: var(--shadowModal);
+  background-color: #fff;
   border-radius: var(--radiusM);
 }
 
@@ -99,15 +101,15 @@ export default {
   padding: var(--spaceM) var(--spaceMl);
 }
 
+.size-s .main {
+  width: 100%;
+}
+
 .size-s .header {
   padding-bottom: var(--spaceSm);
 }
 
 .size-s .footer {
-  padding-top: var(--spaceS);
-}
-
-.size-s .footer > * + * {
-  margin-left: var(--spaceXs);
+  padding-top: var(--spaceM);
 }
 </style>

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 15 Dec 2021 12:40:30 GMT
+ * Generated on Thu, 16 Dec 2021 15:46:07 GMT
  */
 
 export const accentBgBtnMain = "#1DA1B5";

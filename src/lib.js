@@ -13,5 +13,6 @@ export { default as DropdownLayout } from '../src/components/dropdown-layout.vue
 export { default as BaseDropdown } from '../src/components/base-dropdown.vue';
 export { default as BaseSelect } from '../src/components/base-select.vue';
 export { default as BaseInput } from '../src/components/base-input.vue';
+export { default as BaseTextarea } from '../src/components/base-textarea.vue';
 export { default as FormField } from '../src/components/form-field.vue';
 export { default as FormFooter } from '../src/components/form-footer.vue';
