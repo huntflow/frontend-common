@@ -1,7 +1,6 @@
 {
   "name": "hunt-kit",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "prepare-tokens": "style-dictionary build",
