@@ -30,12 +30,11 @@
     </template>
     <template #menu="{ onToggle }">
       <div :class="$style.menu">
-        <select-item
-          v-for="item in items"
-          :key="item.id"
-          :title="item.name"
-          @click="
-            handleSelect(item);
+        <select-list
+          :items="items"
+          :value="value"
+          @input="
+            $emit('input', $event)
             onToggle();
           "
         />
@@ -46,7 +45,7 @@
 
 <script>
 import BaseDropdown from './base-dropdown.vue';
-import SelectItem from './base-select-item.vue';
+import SelectList from './base-select-list.vue';
 
 export default {
   inheritAttrs: false,
@@ -57,7 +56,7 @@ export default {
   },
   components: {
     BaseDropdown,
-    SelectItem,
+    SelectList,
   },
   props: {
     size: {
@@ -190,7 +189,5 @@ export default {
 .menu {
   border-radius: var(--radiusXs);
   box-shadow: 0px 0px 15px rgba(60, 64, 85, 0.15);
-  overflow-y: auto;
-  max-height: 294px; /* ToDo: фикс высота элемента и расчет этого значения от этой высоты 6.5 * itemHeight */
 }
 </style>
