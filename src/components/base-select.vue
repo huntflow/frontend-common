@@ -57,7 +57,7 @@ export default {
   },
   components: {
     BaseDropdown,
-    SelectItem
+    SelectItem,
   },
   props: {
     size: {
@@ -190,5 +190,7 @@ export default {
 .menu {
   border-radius: var(--radiusXs);
   box-shadow: 0px 0px 15px rgba(60, 64, 85, 0.15);
+  overflow-y: auto;
+  max-height: 294px; /* ToDo: фикс высота элемента и расчет этого значения от этой высоты 6.5 * itemHeight */
 }
 </style>

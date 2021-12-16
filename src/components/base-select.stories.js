@@ -27,7 +27,15 @@ const Template = (args, { argTypes }) => ({
         { id: 1, name: 'Option 1' },
         { id: 2, name: 'Option 2' },
         { id: 3, name: 'Option 3' },
-        { id: 4, name: 'Option 4' }
+        { id: 4, name: 'Option 4' },
+        { id: 11, name: 'Option 11' },
+        { id: 21, name: 'Option 21' },
+        { id: 31, name: 'Option 31' },
+        { id: 41, name: 'Option 41' },
+        { id: 12, name: 'Option 12' },
+        { id: 22, name: 'Option 22' },
+        { id: 32, name: 'Option 32' },
+        { id: 42, name: 'Option 42' }
       ],
       value: null
     };
