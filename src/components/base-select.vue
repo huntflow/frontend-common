@@ -1,5 +1,5 @@
 <template>
-  <base-dropdown>
+  <base-dropdown naked>
     <template #default="{ onToggle, show }">
       <button
         :class="[
@@ -29,24 +29,24 @@
       </button>
     </template>
     <template #menu="{ onToggle }">
-      <ul>
-        <li
+      <div :class="$style.menu">
+        <select-item
           v-for="item in items"
           :key="item.id"
+          :title="item.name"
           @click="
             handleSelect(item);
             onToggle();
           "
-        >
-          {{ item.name }}
-        </li>
-      </ul>
+        />
+      </div>
     </template>
   </base-dropdown>
 </template>
 
 <script>
 import BaseDropdown from './base-dropdown.vue';
+import SelectItem from './base-select-item.vue';
 
 export default {
   inheritAttrs: false,
@@ -57,6 +57,7 @@ export default {
   },
   components: {
     BaseDropdown,
+    SelectItem
   },
   props: {
     size: {
@@ -126,6 +127,8 @@ export default {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: default;
+  user-select: none;
 }
 
 .selectButton {
@@ -163,7 +166,6 @@ export default {
 
 .placeholder {
   composes: value;
-  cursor: default;
   color: var(--inputColorTextPlaceholder);
 }
 
@@ -183,5 +185,10 @@ export default {
 
 .size-xs .icon {
   right: var(--spaceXs);
+}
+
+.menu {
+  border-radius: var(--radiusXs);
+  box-shadow: 0px 0px 15px rgba(60, 64, 85, 0.15);
 }
 </style>
