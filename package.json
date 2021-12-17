@@ -1,6 +1,6 @@
 {
   "name": "huntkit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "serve": "vue-cli-service serve",
     "prepare-tokens": "style-dictionary build",
@@ -10,12 +10,7 @@
     "build-storybook": "npm run prepare-tokens && build-storybook"
   },
   "dependencies": {
-    "@storybook/addon-essentials": "^6.2.9",
-    "@vue/cli-plugin-babel": "^4.5.13",
-    "core-js": "^3.6.5",
     "nanoid": "^3.1.30",
-    "vite": "^2.6.3",
-    "vite-plugin-vue2": "^1.8.2",
     "vue": "^2.6.11"
   },
   "main": "dist/hunt-kit.cjs.js",
@@ -28,6 +23,11 @@
     "./hunt-kit.css": "./dist/style.css"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^6.2.9",
+    "@vue/cli-plugin-babel": "^4.5.13",
+    "core-js": "^3.6.5",
+    "vite": "^2.6.3",
+    "vite-plugin-vue2": "^1.8.2",
     "@babel/core": "^7.15.5",
     "@storybook/addon-actions": "^6.3.10",
     "@storybook/addon-links": "^6.3.10",
