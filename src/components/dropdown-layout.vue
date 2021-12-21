@@ -49,10 +49,7 @@ export default {
   color: var(--defaultPalette700);
 }
 
-.root {
-  box-shadow: var(--shadowDropdown);
-  border-radius: var(--radiusM);
-}
+.root {}
 
 .header {
   padding: var(--spaceSm) var(--spaceSm) var(--spaceXs) var(--spaceSm);
