@@ -83,10 +83,6 @@ export default {
   },
   computed: {
     displayValue() {
-      if (this.value === null) {
-        return;
-      }
-
       return this.items.find((v) => v.id === this.value)?.name;
     },
     className() {
@@ -187,6 +183,7 @@ export default {
 }
 
 .menu {
+  background-color: #fff;
   border-radius: var(--radiusXs);
   box-shadow: 0px 0px 15px rgba(60, 64, 85, 0.15);
 }
