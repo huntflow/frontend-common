@@ -1,13 +1,18 @@
 <template>
   <div :class="{ [$style.dropdown]: true, [$style.naked]: naked }">
-    <slot :show="show" :on-toggle="handleToggle" />
-    <div v-if="show" :class="$style.menu">
-      <slot name="menu" :show="show" :on-toggle="handleToggle" />
+    <div ref="triggerPlaceholder"><slot :show="show" :on-toggle="handleToggle" /></div>
+    <div ref="menuPlaceholder">
+      <div v-if="show" :class="$style.menu" :style="menuStyle">
+        <slot name="menu" :show="show" :on-toggle="handleToggle" />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import { nanoid } from 'nanoid';
+import layers from '../libs/layers';
+
 export default {
   name: 'HuntKitDropdown',
   props: {
@@ -15,16 +20,55 @@ export default {
     naked: {
       type: Boolean,
       default: false
+    },
+    size: {
+      type: String,
+      default: 'auto'
     }
   },
   data() {
     return {
       show: false,
+      id: nanoid()
     };
+  },
+  computed: {
+    menuStyle() {
+      const widths = {
+        s: '200px',
+        m: '400px',
+        l: '600px',
+        full: '100%'
+      };
+      return {
+        width: widths[this.size]
+      };
+    },
   },
   methods: {
     handleToggle() {
-      this.show = !this.show;
+      if (this.show) {
+        this.close();
+      } else {
+        this.open();
+      }
+    },
+    open() {
+      const layer = layers.addDropdown({
+        id: this.id,
+        trigger: this.$refs.triggerPlaceholder.childNodes[0],
+        element: this.$refs.menuPlaceholder,
+        hide: () => this.hideFromLayers()
+      });
+
+      this.show = Boolean(layer);
+    },
+    hideFromLayers() {
+      this.show = false;
+    },
+    close() {
+      layers.removeById(this.id);
+      this.show = false;
     }
   }
 }
@@ -32,14 +76,15 @@ export default {
 
 <style module>
 .dropdown {
+  display: inline-block;
   position: relative;
 }
 
 .menu {
   position: absolute;
+  z-index: 1;
   left: 0;
   top: 100%;
-  width: 100%;
   margin-top: var(--spaceXs);
 }
 
