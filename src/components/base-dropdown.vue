@@ -27,6 +27,10 @@ export default {
     menuSize: {
       type: String,
       default: 'auto'
+    },
+    allowFlip: {
+      type: Boolean,
+      default: true
     }
   },
   data() {
@@ -69,10 +73,16 @@ export default {
       const trigger = this.$refs.triggerPlaceholder.childNodes[0];
       const menu = this.$refs.menu;
       if (trigger && menu) {
+        const middleware = [];
+        if (this.allowFlip) {
+          middleware.push(flip());
+        }
+        middleware.push(offset(parseInt(spaceXs)));
+
         computePosition(trigger, menu, {
           placement: 'bottom-start',
           strategy: 'fixed',
-          middleware: [flip(), offset(parseInt(spaceXs))]
+          middleware
         }).then(({ x, y }) => {
           menu.style.left = `${x}px`;
           menu.style.top = `${y}px`;
