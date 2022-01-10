@@ -362,4 +362,3 @@ export class Layers {
   }
 }
 
-export default new Layers(window as any);

@@ -5,6 +5,7 @@ import * as allTokens from './tokens/tokens';
 export const tokens = allTokens;
 
 export { default as layers } from './libs/layers';
+export { Layers } from './libs/layers/layers';
 
 export { default as BaseButton } from './components/base-button.vue';
 export { default as BaseHeading } from './components/base-heading.vue';
