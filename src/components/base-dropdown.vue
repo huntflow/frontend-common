@@ -126,5 +126,6 @@ export default {
 .dropdown:not(.naked) .menu {
   box-shadow: var(--shadowDropdown);
   border-radius: var(--radiusM);
+  background-color: var(--defaultBg);
 }
 </style>
