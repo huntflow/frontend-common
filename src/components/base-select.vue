@@ -1,5 +1,5 @@
 <template>
-  <base-dropdown naked>
+  <base-dropdown menu-size="full" naked>
     <template #default="{ onToggle, show }">
       <button
         :class="[

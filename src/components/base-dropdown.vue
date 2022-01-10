@@ -24,7 +24,7 @@ export default {
       type: Boolean,
       default: false
     },
-    size: {
+    menuSize: {
       type: String,
       default: 'auto'
     }
@@ -40,11 +40,10 @@ export default {
       const widths = {
         s: '200px',
         m: '400px',
-        l: '600px',
-        full: '100%'
+        l: '600px'
       };
       return {
-        width: widths[this.size]
+        width: widths[this.menuSize]
       };
     },
   },
@@ -75,9 +74,12 @@ export default {
           strategy: 'fixed',
           middleware: [flip(), offset(parseInt(spaceXs))]
         }).then(({ x, y }) => {
-          console.log(x, y);
           menu.style.left = `${x}px`;
           menu.style.top = `${y}px`;
+
+          if (this.menuSize === 'full') {
+            menu.style.width = trigger.getBoundingClientRect().width + 'px';
+          }
         });
       }
     },
@@ -111,7 +113,7 @@ export default {
 
 <style module>
 .dropdown {
-  display: inline-block;
+  display: block;
   position: relative;
 }
 

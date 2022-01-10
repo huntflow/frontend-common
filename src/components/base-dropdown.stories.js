@@ -12,7 +12,7 @@ const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   template: `
   <div>
-    <base-dropdown size="m">
+    <base-dropdown menu-size="m">
       <template #default="{ onToggle }">
         <button @click="onToggle">Lonely</button>
       </template>
@@ -20,13 +20,13 @@ const Template = (args, { argTypes }) => ({
         Menu
       </template>
     </base-dropdown>
-
-    <base-dropdown size="m">
+    <hr />
+    <base-dropdown menu-size="m">
       <template #default="{ onToggle }">
         <button @click="onToggle">Nested</button>
       </template>
       <template #menu>
-        <base-dropdown size="m">
+        <base-dropdown menu-size="m">
           <template #default="{ onToggle }">
             <button @click="onToggle">Lonely</button>
           </template>
