@@ -1,15 +1,15 @@
 <template>
-  <base-dropdown naked>
-    <template #default="{ onToggle, show }">
+  <base-dropdown :class="$style.dropdown" menu-size="full" naked>
+    <template #default="{ toggle, shown }">
       <button
         :class="[
           className,
           {
-            [$style.open]: show,
+            [$style.open]: shown,
           },
         ]"
         :disabled="disabled"
-        @click="onToggle"
+        @click="toggle"
       >
         <span :class="displayValue ? $style.value : $style.placeholder">
           {{ displayValue || placeholder }}
@@ -28,14 +28,14 @@
         </svg>
       </button>
     </template>
-    <template #menu="{ onToggle }">
+    <template #menu="{ toggle }">
       <div :class="$style.menu">
         <select-list
           :items="items"
           :value="value"
           @input="
             $emit('input', $event)
-            onToggle();
+            toggle();
           "
         />
       </div>
@@ -107,6 +107,10 @@ export default {
 </script>
 
 <style module>
+.dropdown {
+  display: block;
+}
+
 .icon {
   position: absolute;
   top: 50%;
