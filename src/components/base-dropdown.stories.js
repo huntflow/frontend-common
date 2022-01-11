@@ -13,8 +13,8 @@ const Template = (args, { argTypes }) => ({
   template: `
   <div>
     <base-dropdown menu-size="m">
-      <template #default="{ onToggle }">
-        <button @click="onToggle">Lonely</button>
+      <template #default="{ toggle }">
+        <button @click="toggle">Lonely</button>
       </template>
       <template #menu>
         Menu
@@ -22,13 +22,13 @@ const Template = (args, { argTypes }) => ({
     </base-dropdown>
     <hr />
     <base-dropdown menu-size="m">
-      <template #default="{ onToggle }">
-        <button @click="onToggle">Nested</button>
+      <template #default="{ toggle }">
+        <button @click="toggle">Nested</button>
       </template>
       <template #menu>
         <base-dropdown menu-size="m">
-          <template #default="{ onToggle }">
-            <button @click="onToggle">Lonely</button>
+          <template #default="{ toggle }">
+            <button @click="toggle">Lonely</button>
           </template>
           <template #menu>
             Menu

@@ -1,9 +1,9 @@
 <template>
   <div :class="{ [$style.dropdown]: true, [$style.naked]: naked }">
-    <div ref="triggerPlaceholder"><slot :show="show" :on-toggle="handleToggle" /></div>
+    <div ref="triggerPlaceholder"><slot :shown="show" :toggle="handleToggle" /></div>
     <div ref="menuPlaceholder">
       <div v-if="show" ref="menu" :class="$style.menu" :style="menuStyle">
-        <slot name="menu" :show="show" :on-toggle="handleToggle" />
+        <slot name="menu" :shown="show" :toggle="handleToggle" />
       </div>
     </div>
   </div>
@@ -70,7 +70,7 @@ export default {
   },
   methods: {
     updatePosition() {
-      const trigger = this.$refs.triggerPlaceholder.childNodes[0];
+      const trigger = this.$refs.triggerPlaceholder;
       const menu = this.$refs.menu;
       if (trigger && menu) {
         const middleware = [];
@@ -103,7 +103,7 @@ export default {
     open() {
       const layer = layers.addDropdown({
         id: this.id,
-        trigger: this.$refs.triggerPlaceholder.childNodes[0],
+        trigger: this.$refs.triggerPlaceholder,
         element: this.$refs.menuPlaceholder,
         hide: () => this.hideFromLayers()
       });

@@ -71,11 +71,6 @@
   ],
   "jest": {
     "clearMocks": true,
-    "globals": {
-      "vue-jest": {
-        "experimentalCSSCompile": false
-      }
-    },
     "roots": [
       "<rootDir>"
     ],
@@ -91,7 +86,7 @@
     "transform": {
       "^.+\\.js$": "babel-jest",
       "^.+\\.ts$": "ts-jest",
-      ".+\\.(css|styl|less|sass|scss|svg)$": "jest-transform-stub",
+      ".+\\.(css|svg)$": "jest-transform-stub",
       ".*\\.(vue)$": "vue-jest"
     }
   }
