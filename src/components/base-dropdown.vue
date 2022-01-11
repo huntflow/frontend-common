@@ -123,7 +123,7 @@ export default {
 
 <style module>
 .dropdown {
-  display: block;
+  display: inline-block;
   position: relative;
 }
 
@@ -132,7 +132,6 @@ export default {
   z-index: 1;
   left: 0;
   top: 100%;
-  /* margin-top: var(--spaceXs); */
 }
 
 .dropdown:not(.naked) .menu {

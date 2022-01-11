@@ -1,5 +1,5 @@
 <template>
-  <base-dropdown menu-size="full" naked>
+  <base-dropdown :class="$style.dropdown" menu-size="full" naked>
     <template #default="{ toggle, shown }">
       <button
         :class="[
@@ -107,6 +107,10 @@ export default {
 </script>
 
 <style module>
+.dropdown {
+  display: block;
+}
+
 .icon {
   position: absolute;
   top: 50%;
