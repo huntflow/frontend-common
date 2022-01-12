@@ -15,7 +15,6 @@ import { spaceXs } from '../tokens/tokens';
 import { computePosition, flip, offset } from '@floating-ui/dom';
 import layers from '../libs/layers';
 
-
 export default {
   name: 'HuntKitDropdown',
   props: {
@@ -63,13 +62,31 @@ export default {
   mounted() {
     window.addEventListener('scroll', this.updatePosition, { passive: true });
     window.addEventListener('resize', this.updatePosition);
+
+    this.scrollableParents = [];
+    let node = this.$refs.triggerPlaceholder;
+    while (node) {
+      if (node.clientHeight !== node.scrollHeight) {
+        this.scrollableParents.push(node);
+      }
+      node = node.parentNode;
+    }
+    this.scrollableParents.forEach((node) => {
+      node.addEventListener('scroll', this.updatePosition, { passive: true });
+    });
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.updatePosition);
     window.removeEventListener('resize', this.updatePosition);
+    this.scrollableParents.forEach((node) => {
+      node.removeEventListener('scroll', this.updatePosition);
+    });
   },
   methods: {
     updatePosition() {
+      if (!this.show) {
+        return;
+      }
       const trigger = this.$refs.triggerPlaceholder;
       const menu = this.$refs.menu;
       if (trigger && menu) {
