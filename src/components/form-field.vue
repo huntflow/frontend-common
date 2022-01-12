@@ -3,7 +3,7 @@
     <form-label v-if="label" :for="id" :description="description">{{ label }}</form-label>
     <slot :id="id" />
     <form-error v-if="error" :class="$style.error">{{ error }}</form-error>
-    <div v-else-if="hint" :class="$style.hint">{{ hint }}</div>
+    <div v-else-if="hint" :class="$style.hint" v-html="hint" />
   </div>
 </template>
 
@@ -70,6 +70,10 @@ export default {
   font-family: var(--fontFamily);
   line-height: var(--lineHeightInterface);
 
-  color: var(--inputTextHint);
+  color: var(--inputColorTextHint);
+}
+
+.hint a {
+  color: inherit;
 }
 </style>
