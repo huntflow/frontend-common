@@ -4,6 +4,7 @@
       v-for="item in items"
       :key="item.id"
       :title="item.name"
+      :active="isActive(item)"
       @click="handleSelect(item);"
     />
   </div>
@@ -32,6 +33,13 @@ export default {
     }
   },
   methods: {
+    isActive(item) {
+      if (Array.isArray(this.value)) {
+        return this.value.includes(item.id);
+      }
+
+      return item.id === this.value;
+    },
     handleSelect(item) {
       this.$emit('input', item.id);
     },
