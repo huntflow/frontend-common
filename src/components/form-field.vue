@@ -57,10 +57,6 @@ export default {
   margin-top: var(--spaceS);
 }
 
-.field + .labeled {
-  margin-top: var(--spaceSm);
-}
-
 .hint {
   all: unset;
 
