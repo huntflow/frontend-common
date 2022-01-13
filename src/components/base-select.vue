@@ -1,7 +1,13 @@
 <template>
-  <base-dropdown :class="$style.dropdown" menu-size="full" naked>
+  <base-dropdown
+    :class="$style.dropdown"
+    menu-size="full"
+    naked
+    @change="handleDropdownChange"
+  >
     <template #default="{ toggle, shown }">
       <button
+        ref="button"
         :class="[
           className,
           {
@@ -31,10 +37,11 @@
     <template #menu="{ toggle }">
       <div :class="$style.menu">
         <select-list
+          ref="list"
           :items="items"
           :value="value"
           @input="
-            $emit('input', $event)
+            $emit('input', $event);
             toggle();
           "
         />
@@ -101,6 +108,15 @@ export default {
   methods: {
     handleSelect(item) {
       this.$emit('input', item.id);
+    },
+    handleDropdownChange(isOpened) {
+      if (isOpened) {
+        this.$nextTick(() => {
+          this.$refs.list?.focus?.();
+        });
+      } else {
+        this.$refs.button?.focus?.();
+      }
     },
   },
 };

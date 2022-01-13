@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.item" v-bind="$attrs" v-on="$listeners">
+  <div :class="$style.item" tabindex="-1" @keyup="handleKeyup" v-bind="$attrs" v-on="$listeners">
     <base-text :class="$style.text" :title="title">{{ title }}</base-text>
 
     <svg v-if="active" :class="$style.activeMark" width="16" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,6 +33,13 @@ export default {
       default: false,
     },
   },
+  methods: {
+    handleKeyup(e) {
+      if (e.key === 'Enter') {
+        this.$emit('click');
+      }
+    }
+  }
 };
 </script>
 
@@ -46,7 +53,9 @@ export default {
   user-select: none;
 }
 
-.item:hover {
+.item:hover,
+.item:focus {
+  outline: none;
   background-color: var(--defaultBgStrong);
 }
 

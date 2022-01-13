@@ -126,13 +126,16 @@ export default {
       });
 
       this.show = Boolean(layer);
+      this.$emit('change', this.show);
     },
     hideFromLayers() {
       this.show = false;
+      this.$emit('change', this.show);
     },
     close() {
       layers.removeById(this.id);
       this.show = false;
+      this.$emit('change', this.show);
     }
   }
 }
