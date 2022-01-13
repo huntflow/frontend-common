@@ -63,24 +63,24 @@ export default {
     window.addEventListener('scroll', this.updatePosition, { passive: true });
     window.addEventListener('resize', this.updatePosition);
 
-    this.scrollableParents = [];
-    let node = this.$refs.triggerPlaceholder;
-    while (node) {
-      if (node.clientHeight !== node.scrollHeight) {
-        this.scrollableParents.push(node);
-      }
-      node = node.parentNode;
-    }
-    this.scrollableParents.forEach((node) => {
-      node.addEventListener('scroll', this.updatePosition, { passive: true });
-    });
+    // this.scrollableParents = [];
+    // let node = this.$refs.triggerPlaceholder;
+    // while (node) {
+    //   if (node.clientHeight !== node.scrollHeight) {
+    //     this.scrollableParents.push(node);
+    //   }
+    //   node = node.parentNode;
+    // }
+    // this.scrollableParents.forEach((node) => {
+    //   node.addEventListener('scroll', this.updatePosition, { passive: true });
+    // });
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.updatePosition);
     window.removeEventListener('resize', this.updatePosition);
-    this.scrollableParents.forEach((node) => {
-      node.removeEventListener('scroll', this.updatePosition);
-    });
+    // this.scrollableParents.forEach((node) => {
+    //   node.removeEventListener('scroll', this.updatePosition);
+    // });
   },
   methods: {
     updatePosition() {
@@ -98,7 +98,7 @@ export default {
 
         computePosition(trigger, menu, {
           placement: 'bottom-start',
-          strategy: 'fixed',
+          // strategy: 'fixed',
           middleware
         }).then(({ x, y }) => {
           menu.style.left = `${x}px`;
@@ -145,7 +145,7 @@ export default {
 }
 
 .menu {
-  position: fixed;
+  position: absolute;
   z-index: 1;
   left: 0;
   top: 100%;
