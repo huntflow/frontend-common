@@ -11,7 +11,6 @@
 
 <script>
 import { nanoid } from 'nanoid';
-import { spaceXs } from '../tokens/tokens';
 import { computePosition, flip, offset } from '@floating-ui/dom';
 import layers from '../libs/layers';
 
@@ -94,7 +93,7 @@ export default {
         if (this.allowFlip) {
           middleware.push(flip());
         }
-        middleware.push(offset(parseInt(spaceXs)));
+        middleware.push(offset(parseInt(10)));
 
         computePosition(trigger, menu, {
           placement: 'bottom-start',

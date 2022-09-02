@@ -10,9 +10,6 @@
 </template>
 
 <script>
-import * as tokens from '../tokens/tokens';
-import { capitalize } from '../helpers';
-
 export default {
   name: 'HuntKitFormFooter',
   props: {
@@ -24,7 +21,7 @@ export default {
   computed: {
     style() {
       return {
-        '--spacing': tokens[`space${capitalize(this.spacing)}`]
+        '--spacing': 10
       };
     }
   }

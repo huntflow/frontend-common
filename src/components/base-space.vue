@@ -3,9 +3,6 @@
 </template>
 
 <script>
-import { capitalize } from '../helpers';
-import * as tokens from '../tokens/tokens';
-
 export default {
   name: 'HuntKitSpacer',
   props: {
@@ -18,7 +15,7 @@ export default {
   computed: {
     style() {
       return {
-        '--size': tokens[`space${capitalize(this.size)}`]
+        '--size': 10
       };
     }
   }

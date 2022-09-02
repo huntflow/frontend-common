@@ -3,11 +3,10 @@
   "version": "0.1.2",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "prepare-tokens": "style-dictionary build",
-    "dev": "npm run prepare-tokens && vite build --watch",
-    "build": "npm run prepare-tokens && vite build",
-    "storybook": "npm run prepare-tokens && start-storybook -p 6006",
-    "build-storybook": "npm run prepare-tokens && build-storybook",
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
     "prepublish": "npm run build"
   },
   "dependencies": {
@@ -43,7 +42,6 @@
     "jest": "^27.4.7",
     "jest-transform-stub": "^2.0.0",
     "lodash": "^4.17.21",
-    "style-dictionary": "^3.0.3",
     "ts-jest": "^27.1.2",
     "typescript": "^4.5.4",
     "vite": "^2.6.3",

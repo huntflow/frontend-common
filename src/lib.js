@@ -1,9 +1,5 @@
 import './lib.css';
 
-import * as allTokens from './tokens/tokens';
-
-export const tokens = allTokens;
-
 export { default as layers } from './libs/layers';
 export { Layers } from './libs/layers/layers';
 
