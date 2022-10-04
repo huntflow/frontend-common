@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'HKFormDivider'
+  name: 'HuntKitFormDivider'
 }
 </script>
 

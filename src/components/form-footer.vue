@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.root" :style="style">
+  <div :class="{ [$style.root]: true, [$style.fill]: fill }">
     <div :class="$style.left">
       <slot />
     </div>
@@ -13,16 +13,9 @@
 export default {
   name: 'HuntKitFormFooter',
   props: {
-    spacing: {
-      type: String,
-      default: 'xs'
-    }
-  },
-  computed: {
-    style() {
-      return {
-        '--spacing': 10
-      };
+    fill: {
+      type: Boolean,
+      default: false
     }
   }
 }
@@ -38,6 +31,10 @@ export default {
 .left,
 .right {
   display: flex;
-  column-gap: var(--spacing);
+  gap: 10px;
+}
+
+.fill {
+  justify-content: stretch;
 }
 </style>
