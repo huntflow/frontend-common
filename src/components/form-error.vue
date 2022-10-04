@@ -14,10 +14,10 @@ export default {
 
   display: block;
 
-  font-size: var(--fontSizeS);
-  font-family: var(--fontFamily);
-  line-height: var(--lineHeightInterface);
+  font-size: 14px;
+  font-family: 'hunt-kit-graphik', Arial, Helvetica, sans-serif;
+  line-height: 18px;
 
-  color: var(--inputTextError);
+  color: #cb5b61;
 }
 </style>

@@ -53,14 +53,18 @@ export default {
 </script>
 
 <style module>
+.field {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
 .field + .field {
   margin-top: var(--spaceS);
 }
 
 .hint {
   all: unset;
-
-  display: block;
 
   font-size: var(--fontSizeS);
   font-family: var(--fontFamily);
