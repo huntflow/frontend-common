@@ -4,26 +4,8 @@ export default {
   title: 'Example/Button',
   component: BaseButton,
   argTypes: {
-    size: {
-      control: { type: 'select' },
-      options: ['xs', 's', 'm', 'l'],
-    },
-    theme: {
-      control: { type: 'select' },
-      options: [
-        'default',
-        'accent',
-        'success',
-        'error'
-      ],
-    },
-    prominence: {
-      control: { type: 'select' },
-      options: [
-        'main',
-        'weak',
-        'thin'
-      ],
+    loading: {
+      control: { type: 'boolean' }
     },
     disabled: {
       control: { type: 'boolean' }
@@ -45,8 +27,6 @@ const Template = (args, { argTypes }) => ({
 export const Default = Template.bind({});
 Default.args = {
   label: 'Button',
-  size: 's',
-  theme: 'accent',
-  prominence: 'main',
+  loading: false,
   disabled: false
 };

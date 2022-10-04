@@ -44,12 +44,12 @@ export default {
 <style module>
 
 .button {
-  font-size: 1.6rem;
-  line-height: 1.8rem;
-  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
 
-  height: 4.8rem;
-  padding: 1.6rem 1.2rem;
+  height: 48px;
+  padding: 16px 12px;
 
   font-family: 'hunt-kit-graphik', Arial, Helvetica, sans-serif;
 
