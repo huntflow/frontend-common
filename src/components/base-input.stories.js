@@ -4,10 +4,6 @@ export default {
   title: 'Example/Input',
   component: BaseInput,
   argTypes: {
-    size: {
-      control: { type: 'select' },
-      options: ['xs', 's', 'm', 'l'],
-    },
     invalid: {
       control: { type: 'boolean' }
     },
@@ -30,7 +26,6 @@ const Template = (args, { argTypes }) => ({
 
 export const Default = Template.bind({});
 Default.args = {
-  size: 's',
   disabled: false,
   invalid: false,
   placeholder: 'Type something here'
