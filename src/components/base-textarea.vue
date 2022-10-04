@@ -11,10 +11,6 @@ export default {
     event: 'inputValue'
   },
   props: {
-    size: {
-      type: String,
-      default: 's'
-    },
     invalid: {
       type: Boolean,
       default: false
@@ -43,50 +39,39 @@ export default {
 
 <style module>
 .textarea {
-  all: unset;
+  font: inherit;
+  font-family: 'hunt-kit-graphik', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
 
-  font-size: var(--inputTextFontSize);
-  line-height: var(--inputTextLineHeight);
-  font-weight: var(--inputTextFontWeight);
-  font-family: var(--inputTextFontFamily);
-
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
-
-  resize: vertical;
-  white-space: pre;
-
-  border: 1px solid var(--inputColorBorder);
-  border-radius: var(--radiusXs);
-  background-color: var(--inputColorBg);
-  color: var(--inputColorText);
-}
-
-.invalid {
-  border-color: var(--inputColorBorderError);
+  padding: 12px;
+  min-height: 48px;
+  background: #f6f6f8;
+  border: 1px solid #d8d7e0;
+  border-radius: 6px;
 }
 
 .textarea:focus {
-  border-color: var(--inputColorBorderFocus);
+  outline: none;
+  box-shadow: 0 0 0 3px #c4edfa;
+  border-color: #29a0ba;
 }
 
 .textarea:disabled {
-  color: var(--inputColorTextDisabled);
-  border-color: var(--inputColorBorder);
+  background-color: #f6f6f8;
+  border-color: #f6f6f8;
+  color: #b7b7b7;
 }
 
-.textarea::placeholder {
-  color: var(--inputColorTextPlaceholder);
+.textarea:disabled::placeholder {
+  color: #d1d1d1;
 }
 
-.size-s {
-  min-height: var(--inputHeightS);
-  padding: var(--spaceXs);
+.invalid {
+  border-color: #db525e;
 }
 
-.size-xs {
-  min-height: var(--inputHeightXs);
-  padding: var(--spaceXxs);
+.invalid:focus {
+  box-shadow: 0 0 0 3px #f5cccf;
 }
 </style>
