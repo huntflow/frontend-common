@@ -60,7 +60,7 @@ export default {
 }
 
 .field + .field {
-  margin-top: var(--spaceS);
+  margin-top: 20px;
 }
 
 .hint {
