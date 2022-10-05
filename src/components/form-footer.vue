@@ -35,7 +35,8 @@ export default {
   gap: 10px;
 }
 
-.fill {
-  justify-content: stretch;
+.fill .left {
+  flex-direction: column;
+  flex: 1;
 }
 </style>
