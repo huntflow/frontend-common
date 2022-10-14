@@ -20,7 +20,10 @@ const Template = (args, { argTypes }) => ({
     return args;
   },
   template: `
+  <div>
   <base-button v-bind="$data" v-on="$listeners">{{ label }}</base-button>
+  <base-button v-bind="$data" v-on="$listeners" kind="ghost">{{ label }}</base-button>
+  </div>
   `,
 });
 

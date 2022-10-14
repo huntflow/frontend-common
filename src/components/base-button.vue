@@ -1,6 +1,6 @@
 <template>
   <button
-    :class="{ [$style.button]: true, [$style.buttonPreloader]: loading }"
+    :class="{ [$style.button]: true, [$style[`button-${kind}`]]: true, [$style.buttonPreloader]: loading }"
     :type="type"
     :disabled="loading"
     v-bind="$attrs"
@@ -31,18 +31,24 @@ export default {
   props: {
     type: {
       type: String,
-      default: 'button'
+      default: 'button',
+    },
+    kind: {
+      type: String,
+      default: 'default',
+      validator(value) {
+        return ['default', 'ghost'].includes(value);
+      },
     },
     loading: {
       type: Boolean,
-      default: false
-    }
-  }
+      default: false,
+    },
+  },
 };
 </script>
 
 <style module>
-
 .button {
   font-size: 16px;
   line-height: 18px;
@@ -88,6 +94,15 @@ export default {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.button-ghost {
+  background-color: transparent;
+  color: #9C9C9C;
+}
+
+.button-ghost:hover {
+  color: #666666;
 }
 
 .spinner {
