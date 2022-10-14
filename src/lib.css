@@ -18,3 +18,7 @@
   font-style: normal;
   src: url('./fonts/700.woff2') format('woff2');
 }
+
+:root {
+  --hunt-kit-font-family: 'hunt-kit-graphik', Arial, Helvetica, sans-serif;
+}

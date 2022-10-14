@@ -1,5 +1,5 @@
 <template>
-  <component :is="tag" :class="secondary ? $style.secondary : $style.text"
+  <component :is="tag" :class="[$style.text, $style[`text-${kind}`]]" :style="style"
     ><slot
   /></component>
 </template>
@@ -12,27 +12,59 @@ export default {
       type: String,
       default: 'span',
     },
-    secondary: Boolean,
+    kind: {
+      type: String,
+      default: 'text',
+      validator(value) {
+        return ['text', 'ui', 'ui-secondary'].includes(value);
+      }
+    },
+    weight: {
+      type: String,
+      default: 'normal',
+      validator(value) {
+        return ['normal', 'medium', 'bold'].includes(value);
+      }
+    }
   },
+  computed: {
+    style() {
+      const weights = {
+        normal: 400,
+        medium: 500,
+        bold: 600
+      };
+      return {
+        'font-weight': weights[this.weight]
+      };
+    }
+  }
 };
 </script>
 
 <style module>
 .text {
   all: unset;
+  font-family: var(--hunt-kit-font-family);
 
-  font-size: var(--headerBaseTextFontSize);
-  line-height: var(--headerBaseTextLineHeight);
-  font-weight: var(--headerBaseTextFontWeight);
-  font-family: var(--headerBaseTextFontFamily);
+  font-size: 16px;
+  line-height: 24px;
 }
 
-.secondary {
-  composes: text;
+.text p {
+  margin: 0;
+}
 
-  font-size: var(--headerSecondaryTextFontSize);
-  line-height: var(--headerSecondaryTextLineHeight);
-  font-weight: var(--headerSecondaryTextFontWeight);
-  font-family: var(--headerSecondaryTextFontFamily);
+.text p + p {
+  margin-top: 8px;
+}
+
+.text-ui {
+  line-height: 18px;
+}
+
+.text-ui-secondary {
+  font-size: 14px;
+  line-height: 18px;
 }
 </style>
