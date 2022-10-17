@@ -1,6 +1,7 @@
 import './lib.css';
 
 export { default as BaseButton } from './components/base-button.vue';
+export { default as BaseLoader } from './components/base-loader.vue';
 export { default as BaseHeading } from './components/base-heading.vue';
 export { default as BaseText } from './components/base-text.vue';
 export { default as BaseLink } from './components/base-link.vue';
