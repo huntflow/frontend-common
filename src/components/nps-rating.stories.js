@@ -18,7 +18,7 @@ const Template = (args, { argTypes }) => ({
   },
   template: `
   <div>
-  <nps-rating v-model="value" bottom-label="Точно нет" top-label="Точно да" />
+  <nps-rating v-model="value" :labels="['Точно нет', 'Точно да']" top-label="" />
   Value: {{ value === null ? 'null' : value }}
   </div>
   `,

@@ -11,8 +11,7 @@
       </button>
     </div>
     <div :class="$style.labels">
-      <div v-if="bottomLabel" :class="$style.label">{{ bottomLabel }}</div>
-      <div v-if="topLabel" :class="$style.label">{{ topLabel }}</div>
+      <div v-for="label, i in labels" :key="i" :class="$style.label">{{ label }}</div>
     </div>
   </div>
 </template>
@@ -25,13 +24,9 @@ export default {
   },
   name: 'NPSRating',
   props: {
-    bottomLabel: {
-      type: String,
-      default: null,
-    },
-    topLabel: {
-      type: String,
-      default: null,
+    labels: {
+      type: Array,
+      default: () => [],
     },
     scale: {
       type: Number,
@@ -118,5 +113,9 @@ export default {
   cursor: default;
   color: #b8b8c1;
   margin-top: 4px;
+}
+
+.withValue .labels {
+  opacity: 0;
 }
 </style>
