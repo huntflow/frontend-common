@@ -48,19 +48,25 @@ export default {
 .size-1 {
   font-weight: 600;
   font-size: 30px;
-  line-height: 115%;
+  line-height: 32px;
 }
 
 .size-2 {
   font-weight: 600;
   font-size: 24px;
-  line-height: 130%;
+  line-height: 32px;
 }
 
 .size-3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .size-4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .size-5 {
