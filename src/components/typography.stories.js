@@ -14,8 +14,6 @@ const Template = () => ({
     <base-heading :level="2">Heading 2</base-heading>
     <base-heading :level="3">Heading 3</base-heading>
     <base-heading :level="4">Heading 4</base-heading>
-    <base-heading :level="5">Heading 5</base-heading>
-    <base-heading :level="6">Heading 6</base-heading>
     <div><base-text>Text Main</base-text></div>
     <div><base-text weight="bold">Text Main Bold</base-text></div>
     <div><base-text>UI Main</base-text></div>

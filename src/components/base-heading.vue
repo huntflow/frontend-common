@@ -40,33 +40,25 @@ export default {
 
 <style module>
 .heading {
-  all: unset;
+  margin: 0;
   font-family: var(--hunt-kit-font-family);
   display: block;
 }
 
 .size-1 {
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 32px;
+  composes: heading1 from './common-text.module.css';
 }
 
 .size-2 {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
+  composes: heading2 from './common-text.module.css';
 }
 
 .size-3 {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
+  composes: heading3 from './common-text.module.css';
 }
 
 .size-4 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  composes: heading4 from './common-text.module.css';
 }
 
 .size-5 {
