@@ -26,6 +26,9 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.root:not(:first-child) {
   margin-top: 32px;
 }
 
