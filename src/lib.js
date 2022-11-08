@@ -14,3 +14,4 @@ export { default as FormField } from './components/form-field.vue';
 export { default as FormFooter } from './components/form-footer.vue';
 export { default as FormDivider } from './components/form-divider.vue';
 export { default as PopupLayout } from './components/popup-layout.vue';
+export { default as NpsRating } from './components/nps-rating.vue';
